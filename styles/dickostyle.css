@@ -1,4 +1,4 @@
-html{margin : 0 250px 0 250px;}
+html{margin : 0 350px 0 350px;}
 
 header {
     display: flex;               /* active Flexbox */
@@ -60,6 +60,7 @@ header nav ul.menu li a:hover {
     justify-content: space-between;
     text-align: center;
     padding: 0;
+    gap: 20px;
 
  }
 
