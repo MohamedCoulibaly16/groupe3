@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    margin: 40px auto;
+    background: white;
+}
+
+.left {
+    width: 35%;
+    background: #7705f8;
+    padding: 30px;
+}
+
+.profile-img {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid white;
+}
+
+.left h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.left ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+
+.right {
+    width: 65%;
+    padding: 40px;
+}
+
+.header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.header h1 span {
+    font-weight: bold;
+}
+
+.header h3 {
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.right h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.job {
+    margin-bottom: 15px;
+}
+
+.job span {
+    float: right;
+    color: gray;
+    font-size: 14px;
+}
+
+ul {
+    margin-left: 20px;
+}
