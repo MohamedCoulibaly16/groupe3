@@ -72,7 +72,7 @@
         margin-right: 8px;
     }
     header {
-        border: #000000 solid 2px;
+       
         height: 20vh;
         /* margin-left: -60px; */
         padding-top: 7vh;
@@ -80,5 +80,53 @@
         color: white;
 
     }
+    header h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }   
+    .right {
+        width: 55%;
+        /* padding: 0.5em; */
+        background-color: white;
+    }
+    /* .right h2 {
+        border-bottom: 1px solid #000;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    } */
+    .right section {
+        margin-bottom: 1.5em;
+        /* border: #000000 solid 2px; */
+
+    }
+    .profile {
+        margin-top: 2em;
+    }
+    .profile h3 {
+        /* background-color: var(--primary-color);
+        color: var(--blanc); */
+        padding: 0.5em;
+        border: 3px solid #000000;
+    }
+    .profile p {
+        padding: 0.5em;
+    }
+    .right h3 {
+        /* background-color: var(--primary-color);
+        color: var(--blanc); */
+        padding: 0.5em;
+        margin-bottom: 10px;
+    }
+    .right section{
+        padding: 1em 3em;
+    }
 
     /************** Mohamed Coulibaly style ****************/
+
+    /* message de confirmation */
+    .message{
+        border: 1px solid black;
+        width: 75vw;
+        margin: 50px auto;
+
+    }
