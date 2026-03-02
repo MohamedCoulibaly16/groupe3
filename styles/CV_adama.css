@@ -1,0 +1,96 @@
+body{
+    background-color: ;
+}
+
+.header{
+    background-color: #183684;
+    /* width: 100%; */
+    height: 200px;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: white;
+    text-align: right;
+
+}
+.nom{
+    margin-right: 10%;
+    padding-top: 3%;
+}
+
+.titres{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifs;
+    font-size: 40px;
+}
+ .paragraph {
+  font-family: inter;
+  font-weight: bold;
+  font-style:normal;
+  font-size: 20;
+} 
+
+.profil{
+    background-color: #C9C9C9;
+    width: 300px;
+    height: 100%;
+     margin-left: 10%;
+     margin-top: -13%;
+     padding: 2%;
+     border-top-right-radius: 200px;
+     border-top-left-radius: 200px;
+     text-align: center;
+   
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.sect{
+      text-align: left;
+}
+
+.sect h1{
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifs;
+     font-size: 20px;
+}
+
+.sect p{
+    font-family: inter;
+}
+
+ ul li{
+    font-family: inter;
+}
+
+
+.titre_glob{
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+ .icons{
+    width: 20px;
+    height: 20px;
+
+}
+
+
+/* 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24 */
+}
