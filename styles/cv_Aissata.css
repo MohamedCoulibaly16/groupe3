@@ -1,169 +1,123 @@
-/* Reset des marges par défaut du navigateur */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+@import url('main.css');
+
+:root {
+    --side-bg: #021957;
 }
 
-/* Corps de la page : fond gris clair pour faire ressortir le CV */
 body {
-    background-color: #f0f0f0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 50px 0;
+    background-color: rgb(231, 231, 231);
     display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* Le conteneur du CV : format A4 approximatif */
-.cv-container {
-    width: 850px;
-    background-color: white;
-    display: flex; /* Aligne la sidebar et le main côte à côte */
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    border-radius: 20px; /* Coins arrondis comme sur l'image */
-    overflow: hidden; /* Pour que le contenu ne dépasse pas des coins arrondis */
-}
-
-/* --- STYLE DE LA BARRE LATÉRALE --- */
-.sidebar {
-    width: 35%;
-    background-color: #1a3a8a; /* Bleu foncé */
-    color: white;
-    padding: 40px 20px;
-    position: relative; /* Nécessaire pour positionner la photo */
-}
-
-/* Conteneur de la photo pour créer le cercle bleu clair */
-.profile-img-container {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 30px auto;
-    border: 5px solid #00d4ff; /* Bordure bleu clair */
-    border-radius: 50%; /* Rend le cadre circulaire */
-    overflow: hidden; /* Coupe l'image pour qu'elle reste dans le cercle */
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* L'image remplit le cercle sans se déformer */
+.cv-container {
+    position: relative;
+    display: flex;
+    background-color: white;
+    width: 595px;
+    height: 842px;
 }
+
+.sidebar {
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    background-color: var(--side-bg);
+    padding: 18px 31px;
+}
+
+.sidebar-content {}
+
+.main-content {}
 
 .sidebar-section {
-    margin-bottom: 30px;
+    h3 {
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    .langue-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-.sidebar-section h3 {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-}
-
-.sidebar-section ul {
-    list-style: none; /* Enlever les puces par défaut */
-}
-
-.sidebar-section li {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-    font-weight: 300;
-}
-
-/* Aligner les langues et leur niveau à gauche et à droite */
-.langue-item {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.85rem;
-    margin-bottom: 5px;
-}
-
-/* --- STYLE DU CONTENU PRINCIPAL --- */
-.main-content {
-    width: 65%;
-    background-color: white;
-}
-.header-section{
-    margin-top: 65px;
-    align-items: center;
-    gap: 30px; /* Espace entre la photo et le texte */
-    grid-column: 1 / -1; /* Prend toute la largeur du conteneur */
-    position: absolute;
-}
-
-/* En-tête bleu en haut à droite */
-.header-blue {
-    background-color: #3b5998; /* Bleu moyen */
+.profile-section {
+    top: 50px;
     color: white;
-    padding: 60px 40px;
-    margin-top: 25 px;
-    border-bottom-left-radius: 50px; 
+    position: absolute;
+    right: 0;
+    background-color: var(--primary-color);
     display: flex;
+    justify-content: flex-end;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    figure {
+
+        height: 161px;
+        width: 161px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 3px solid var(--secondary-color);
+
+        img {
+            height: 300px;
+            width: 300px;
+            object-fit: contain;
+        }
+    }
+
+    h1 {
+        font-size: 32px;
+
+    }
+
+    h2 {
+
+        font-size: 15px;
+        position: relative;
+    }
+
+    p {
+        margin: 20px 0;
+        font-size: 12px;
+        width: 317px;
+    }
+
+    h2::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        bottom: -10px;
+        left: 0;
+        width: 20%;
+        height: 4px;
+    }
+}
+
+.main-content {
+    padding-top: 35px;
+    display: flex;
+    height: 100%;
     align-items: center;
-    gap: 30px; /* Espace entre la photo et le texte */
-}
+    justify-content: center;
 
-.header-blue h1 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
-
-.header-blue h2 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    font-weight: 400;
-}
-
-/* Ligne sous le titre */
-.underline {
-    width: 150px;
-    height: 4px;
-    background-color: #00d4ff;
-    margin: 15px 0;
-}
-
-.header-blue p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-top: 15px;
-}
-
-/* Sections de formation */
-.experience-section {
-    padding: 40px;
-}
-
-.section-title {
-    color: #1a3a8a;
-    font-size: 1.4rem;
-}
-
-.underline-short {
-    width: 40px;
-    height: 3px;
-    background-color: #ddd;
-    margin: 10px 0 25px 0;
-}
-
-.exp-item {
-    margin-bottom: 25px;
-}
-
-.exp-header {
-    display: flex;
-    justify-content: space-between; /* Nom du diplôme à gauche, date à droite */
-    color: #1a3a8a;
-    margin-bottom: 5px;
-}
-
-.exp-item p {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.date {
-    font-weight: bold;
-    font-size: 0.9rem;
 }

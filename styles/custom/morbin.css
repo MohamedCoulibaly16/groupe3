@@ -14,8 +14,10 @@ body {
 }
 
 .frame {
+    background-color: white;
     display: grid;
     width: 70vw;
     height: 200vh;
-    background-color: #021957;
+    border: 1px solid black;
+    border-radius: 10px;
 }
