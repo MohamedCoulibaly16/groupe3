@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/cv_moh.css">
 </head>
 <body>
-    <div class="message">
-        CV Telecharger avec success !!!
+    <div class="message" id="message">
+        <p>CV Telecharger avec success !!!</p>
     </div>
+
+    <button onclick="showMessage()">Télécharger le CV</button>
+
+    <script>
+        setTimeout(() => {
+            const message = document.getElementById('message');
+            if (message) {
+                message.style.display = 'none';
+            }
+        }, 2000);
+
+        function showMessage() {
+        const message = document.getElementById('message');
+
+        // Afficher le message
+        message.style.display = 'block';
+
+        // Le cacher après 5 secondes
+        setTimeout(() => {
+            message.style.display = 'none';
+        }, 5000);
+    }
+    </script>
 </body>
 </html>
