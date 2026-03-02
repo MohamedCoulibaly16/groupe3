@@ -1,0 +1,84 @@
+
+    /* Les couleurs de base */
+
+    :root {
+        /* Couleurs principales */
+        --primary-color: #183684;
+        --secondary-color: #19B9D4;
+        --bg-color: #C9C9C9;
+
+        /* Variantes utiles (optionnel) */
+        --blanc: #ffffff;
+        --noir: #000000;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        /* background-color: var(--bg-color); */
+        background-color: white;
+    }
+
+    /************ Mohamed Coulibaly style *************/
+    .cv {
+        width: 60vw;
+        /* width: 900px; */
+        margin: auto;
+        background-color: var(--bg-color);
+        display: flex;
+        
+    }
+    .left {
+        width: 45%;
+        background-color: #5f74a7;
+        color: var(--blanc);
+        padding: 2em;
+    }
+
+    .photo img{
+        width: 15em;
+        height: 15em;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 4vh;
+        background-color: white;
+        border-color: red;
+    }
+
+    .left h2 {
+        border-bottom: 1px solid #fff;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }
+    .left .contact {
+        list-style: none;
+        margin-bottom: 1.5em;
+    }
+    .left ul {
+        /* list-style: none; */
+        margin-bottom: 1.5em;
+        margin-left: 20px;
+    }
+    .left li {
+        /* margin-bottom: 0.7em; */
+        margin: 8px 0;
+    }
+    .contact i {
+        margin-right: 8px;
+    }
+    header {
+        border: #000000 solid 2px;
+        height: 20vh;
+        /* margin-left: -60px; */
+        padding-top: 7vh;
+        background-color: var(--primary-color);
+        color: white;
+
+    }
+
+    /************** Mohamed Coulibaly style ****************/
