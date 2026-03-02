@@ -43,7 +43,10 @@ body{
 
 img{
     width: 300px;
-    height: 300px;
+    height: 300px; 
+      object-fit: cover;   /*pour que l'image remplisse entièrement le conteneur sans être déformée*/
+     object-position: top; /*pour aligner l'image en haut du conteneur*/
+   /* object-fit: contain; pour que l'image soit entièrement visible dans le conteneur sans être déformée, mais avec des espaces vides si nécessaire*/
     border-radius: 100%;
 }
 
@@ -92,5 +95,5 @@ img{
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 24 */
-}
+  'opsz' 24 
+}  */
