@@ -1,0 +1,21 @@
+@import url('../main.css');
+
+:root {
+    --side-bg: #021957;
+}
+
+body {
+
+    display: flex;
+    background-color: var(--tertiary-color);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.frame {
+    display: grid;
+    width: 70vw;
+    height: 200vh;
+    background-color: #021957;
+}
