@@ -148,55 +148,56 @@
     <footer>
     </footer>
 
-    <script>
-        function telechargerPDF(){
-            re
-        }
-    </script>
-    <!-- <script>
-        async function telechargerPDF() {
-            const button = document.querySelector('.telecharger');
-            if (button) {
-                button.disabled = true;
-                button.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Téléchargement...';
-            }
+    <a href="../index.html">
+        <div class="retour">
 
-            const element = document.getElementById("cv");
-            if (!element) {
-                console.error('Élément #cv introuvable');
-                if (button) {
-                    button.disabled = false;
-                    button.innerHTML = '<i class="fa-solid fa-download"></i> Télécharger le CV';
-                }
-                return;
-            }
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M15 20L7 12L15 4" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <h3>Retour</h1>
+        </div>
+    </a>
+    <style>
+        .retour {
+            top: 30px;
+            left: 50px;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 4px 15px;
+            border-radius: 20px;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            transition-duration: 200ms;
 
-            const options = {
-                margin: 0.5,
-                filename: "CV_ibe.pdf",
-                image: { type: "jpeg", quality: 0.98 },
-                html2canvas: { 
-                scale: 2,
-                useCORS: true
-                },
-                jsPDF: { unit: "in", format: "a4", orientation: "portrait" }
-            };
+            svg {
+                height: 30px;
+                width: 100%;
+                fill: none;
 
-            html2pdf().set(options).from(element).save();
-
-            try {
-                await html2pdf().set(options).from(element).save();
-            } catch (err) {
-                console.error(err);
-                alert('Erreur lors de la génération du PDF.');
-            } finally {
-                if (button) {
-                    button.disabled = false;
-                    button.innerHTML = '<i class="fa-solid fa-download"></i> Télécharger le CV';
+                path {
+                    stroke: var(--primary-color);
                 }
             }
         }
-    </script> -->
+
+        .retour:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transition-duration: 200ms;
+
+            path {
+                stroke: white;
+            }
+        }
+    </style>
 </body>
 
 </html>
