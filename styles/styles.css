@@ -185,12 +185,22 @@ main {
         font-weight: bold;
         color: var(--primary-color);
         transition-duration: 150ms;
+
+        a {
+           color: var(--primary-color);
+            }
     }
 
     button:hover {
         color: white;
         background-color: var(--primary-color);
         transition-duration: 150ms;
+
+            a:hover {
+                color: white;
+            background-color: var(--primary-color);
+            transition-duration: 150ms;
+            }
     }
     
 }
