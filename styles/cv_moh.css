@@ -33,20 +33,32 @@
         
     }
     .left {
-        width: 45%;
+        width: 40%;
         background-color: #5f74a7;
         color: var(--blanc);
-        padding: 2em;
+        padding: 8em 2em 2em 2em;
+        
+    }
+    .photo{
+        position: absolute;
+        left: 3em;
+        top: 3em;
+       
     }
 
     .photo img{
-        width: 15em;
-        height: 15em;
+        width: 17em;
+        height: 17em;
         border-radius: 50%;
         display: block;
         margin: 0 auto 4vh;
         background-color: white;
         border-color: red;
+    }
+    .photo img:hover {
+        transition-duration: 200ms;
+        transform: translateY(-10px);
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.488);
     }
 
     .left h2 {
@@ -72,19 +84,23 @@
     }
     header {
        
-        height: 20vh;
+        height: 30vh;
         /* margin-left: -60px; */
-        padding-top: 7vh;
+        padding-top: 10vh;
         background-color: var(--primary-color);
         color: white;
+        width: 60vw;
+        margin: auto;
+        position: relative;
 
     }
     header h1 {
-        text-align: center;
+        text-align: right;
         font-size: 2.5em;
+        margin-right: 3em;
     }   
     .right {
-        width: 55%;
+        width: 60%;
         /* padding: 0.5em; */
         background-color: white;
     }
