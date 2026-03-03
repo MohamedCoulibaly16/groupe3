@@ -15,13 +15,14 @@ body {
         margin: 20px auto;
         padding: 10px 20px;
         background-color: var(--primary-color);
-        color: var(--blanc);
+        color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         position: fixed;
         bottom: 20px;
         right: 60px;
+        font-size: 1em;
         
     }
     .telecharger:hover {
