@@ -167,6 +167,7 @@
         position: fixed;
         bottom: 20px;
         right: 60px;
+        font-size: 1em;
     }
     .telecharger:hover {
         background-color: var(--secondary-color);
