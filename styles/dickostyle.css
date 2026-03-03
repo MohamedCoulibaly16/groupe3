@@ -6,12 +6,18 @@ header {
     justify-content: space-between; /* espace entre profil, titre et menu */
     padding: 10px 20px;
     background-color: #183684;
+    position: relative;
+    height: 150px;
 }
 
 /* Image profil */
 .profil {
-    width: 150px;
-    height: 150px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 20px;
     border-radius: 50%; /* rond si tu veux */}
 
 /* Titre */
@@ -84,4 +90,15 @@ header nav ul.menu li a:hover {
 
 #btnTelecharger:hover {
     background-color: #007bff !important;
+}
+.back-icon {
+  position: absolute; /* ou relative si dans header */
+  top: 50px;          /* ajuste selon ton header */
+  right: 10px;        /* à droite */
+  cursor: pointer;
+}
+
+.back-icon i {
+  color: #000;        /* couleur de l’icône */
+  background: none;   /* pas de fond */
 }
