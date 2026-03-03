@@ -11,15 +11,20 @@ body {
 
 .container {
     display: flex;
-    width: 900px;
+    width: 210mm;
+     min-height: 297mm; 
     margin: 40px auto;
     background: white;
 }
 
 .left {
-    width: 35%;
+    width: 25%;
     background: #7705f8;
-    padding: 30px;
+    color: white;
+    padding: 20px;
+ border-top: 5px solid #2c3e50;
+ border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
 
 .profile-img {
@@ -48,10 +53,16 @@ body {
 
 
 .right {
-    width: 65%;
-    padding: 40px;
+    width: 95%;
+    padding: 10px;
+    flex: 100px; 
 }
-
+.header{
+    width: 100%;
+    background-color: whitesmoke;
+    color: blue;
+    padding: 20px;
+}
 .header h1 {
     font-size: 32px;
     letter-spacing: 2px;
@@ -62,7 +73,7 @@ body {
 }
 
 .header h3 {
-    color: gray;
+    color: blue;
     margin-bottom: 30px;
 }
 
@@ -71,6 +82,7 @@ body {
     margin-bottom: 10px;
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
+    color: #7705f8;
 }
 
 .job {
