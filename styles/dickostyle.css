@@ -1,4 +1,4 @@
-html{margin : 0 350px 0 350px;}
+html{margin : 0 25% 0 25%;}
 
 header {
     display: flex;               /* active Flexbox */
@@ -68,3 +68,20 @@ header nav ul.menu li a:hover {
     text-align: center;
     padding: 0;
  }
+
+ .profiltext {
+    text-align: justify;
+    padding: 0 10px 0 0;
+ }
+
+ .formations {
+    padding: 0 10px O O;
+ }
+
+ .diplome {
+    line-height: 1; /* espace réduit */
+}
+
+#btnTelecharger:hover {
+    background-color: #007bff !important;
+}
