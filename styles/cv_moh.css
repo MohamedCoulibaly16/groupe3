@@ -21,7 +21,7 @@
 
     body {
         /* background-color: var(--bg-color); */
-        background-color: white;
+        background-color: rgb(213, 216, 218);
     }
 
     /************ Mohamed Coulibaly style *************/
@@ -182,20 +182,42 @@
     /************** Mohamed Coulibaly style ****************/
 
     /* message de confirmation */
-    .message{
-        display: block;
+    /* .message{
+        
         border: 1px solid green;
         width: 20vw;
-        margin: 50px auto;
+        margin: auto;
         background-color: #2da44e6e;
         padding: 20px;
         border-radius: 10px;
-        margin-top: 3vh;
-        position: fixed;
-        top: 30px;
-        right: 20px;
-        transform: translateX(-50%);
-        /* color: #4CAF50; */
+        position: static;
+        top: 20px;
+        right: 40vw;
+        
         
 
-    }
+    } */
+
+    .message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background-color: #2da44e;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, top 0.4s ease;
+     z-index: 9999;
+}
+
+.message.show {
+    opacity: 1;
+    top: 40px;
+}
