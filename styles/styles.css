@@ -71,7 +71,13 @@ main {
 
 }
 
+.info-sec {
+    font-weight: 400;
+    width: 70%;
+}
+
 .soulignage {
+
     position: relative;
 }
 
@@ -125,16 +131,17 @@ main {
     height: 275px;
     padding: 12px 10px;
     border-radius: 20px;
-    border: .5px solid var(--secondary-color);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.288);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     figure {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 200px;
+
     }
 
     transition-duration: 200ms;
@@ -144,7 +151,7 @@ main {
     transition-duration: 200ms;
     transform: translateY(-10px);
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.288);
-    background-color: rgb(218, 218, 218);
+
 
 }
 
@@ -176,35 +183,12 @@ main {
         color: var(--primary-color);
     }
 
-    button {
-        height: 40px;
-        border: 2px solid var(--primary-color);
-        border-radius: 5px;
 
-        font-size: 16px;
-        font-weight: bold;
-        color: var(--primary-color);
-        transition-duration: 150ms;
 
-        a {
-           color: var(--primary-color);
-            }
-    }
-    
 
-    button:hover {
-        color: white;
-        background-color: var(--primary-color);
-        transition-duration: 150ms;
 
-            a:hover {
-                color: white;
-            background-color: var(--primary-color);
-            transition-duration: 150ms;
-            }
-    }
 
-     .voir_cv {
+    .voir_cv {
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -219,14 +203,14 @@ main {
         text-decoration: none;
         padding-top: 7px;
     }
-    
+
 
     .voir_cv:hover {
         color: white;
         background-color: var(--primary-color);
         transition-duration: 150ms;
     }
-    
+
 }
 
 footer {
@@ -243,4 +227,10 @@ footer {
         height: 100px;
     }
 }
-   
+
+.morbin-img {}
+
+.morbin-container {
+    height: 100px;
+
+}
