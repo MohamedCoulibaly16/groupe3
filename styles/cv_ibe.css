@@ -73,7 +73,7 @@ body {
     .education-item {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 10px;
         
     }
@@ -269,6 +269,13 @@ body {
     background-color: var(--gris-clair);
     border-radius: 20px ;
     border: 2px solid var(--bleu-saphir-fonce);
+}
+
+.lieu{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
 }
     
 }
