@@ -190,6 +190,7 @@ main {
            color: var(--primary-color);
             }
     }
+    
 
     button:hover {
         color: white;
@@ -201,6 +202,29 @@ main {
             background-color: var(--primary-color);
             transition-duration: 150ms;
             }
+    }
+
+     .voir_cv {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 40px;
+        border: 2px solid var(--primary-color);
+        border-radius: 5px;
+
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--primary-color);
+        transition-duration: 150ms;
+        text-decoration: none;
+        padding-top: 7px;
+    }
+    
+
+    .voir_cv:hover {
+        color: white;
+        background-color: var(--primary-color);
+        transition-duration: 150ms;
     }
     
 }
@@ -219,3 +243,4 @@ footer {
         height: 100px;
     }
 }
+   
