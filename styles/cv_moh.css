@@ -1,0 +1,192 @@
+ /* Les couleurs de base */
+
+    :root {
+        /* Couleurs principales */
+        --primary-color: #183684;
+        --secondary-color: #19B9D4;
+        --bg-color: #C9C9C9;
+
+        /* Variantes utiles (optionnel) */
+        --blanc: #ffffff;
+        --noir: #000000;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        /* background-color: var(--bg-color); */
+        background-color: white;
+    }
+
+    /************ Mohamed Coulibaly style *************/
+    .cv {
+        width: 60vw;
+        /* width: 900px; */
+        margin: auto;
+        background-color: var(--bg-color);
+        display: flex;
+        
+    }
+    .left {
+        width: 40%;
+        background-color: #5f74a7;
+        color: var(--blanc);
+        padding: 8em 2em 2em 2em;
+        
+    }
+    .photo{
+        position: absolute;
+        left: 3em;
+        top: 3em;
+       
+    }
+
+    .photo img{
+        width: 17em;
+        height: 17em;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 4vh;
+        background-color: white;
+        border-color: red;
+    }
+    .photo img:hover {
+        transition-duration: 200ms;
+        transform: translateY(-10px);
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.488);
+    }
+
+    .left h2 {
+        border-bottom: 1px solid #fff;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }
+    .left .contact {
+        list-style: none;
+        margin-bottom: 1.5em;
+    }
+    .left ul {
+        /* list-style: none; */
+        margin-bottom: 1.5em;
+        margin-left: 20px;
+    }
+    .left li {
+        /* margin-bottom: 0.7em; */
+        margin: 8px 0;
+    }
+    .contact i {
+        margin-right: 8px;
+    }
+    header {
+       
+        height: 30vh;
+        /* margin-left: -60px; */
+        padding-top: 10vh;
+        background-color: var(--primary-color);
+        color: white;
+        width: 60vw;
+        margin: auto;
+        position: relative;
+
+    }
+    header h1 {
+        text-align: right;
+        font-size: 2.5em;
+        margin-right: 3em;
+    }   
+    .right {
+        width: 60%;
+        /* padding: 0.5em; */
+        background-color: white;
+    }
+    /* .right h2 {
+        border-bottom: 1px solid #000;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    } */
+    .right section {
+        margin-bottom: 1.5em;
+        /* border: #000000 solid 2px; */
+
+    }
+    .profile {
+        margin-top: 1em;
+    }
+    .profile h3 {
+        /* background-color: var(--primary-color);
+        color: var(--blanc); */
+        padding: 0.5em;
+       
+
+    }
+    .profile p {
+        padding: 0.5em;
+    }
+    .right h3 {
+        /* background-color: var(--primary-color);
+        color: var(--blanc); */
+        padding: 0.5em;
+        
+    }
+    .right section{
+        padding: 0 3em;
+    }
+     .right section h3{
+        border-bottom: 1px solid #000;
+    }
+    .item{
+        /* border: #000 solid 1px; */
+        margin-bottom: 1em;
+        margin-top: 2em;
+    }
+    .item .ligne{
+        /* border: #000 solid 1px; */
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    .interet p{
+        margin-top: 1em;
+        padding: 0.5em;
+    }
+    .telecharger {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: var(--blanc);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 60px;
+    }
+    .telecharger:hover {
+        background-color: var(--secondary-color);
+        transition-duration: 200ms;
+        transform: translateY(-10px);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.488);
+        
+    }
+
+
+    /************** Mohamed Coulibaly style ****************/
+
+    /* message de confirmation */
+    .message{
+        border: 1px solid green;
+        width: 75vw;
+        margin: 50px auto;
+        background-color: #2da44e6e;
+        padding: 20px;
+        border-radius: 10px;
+        /* color: #4CAF50; */
+
+    }
