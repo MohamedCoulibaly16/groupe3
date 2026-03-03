@@ -16,15 +16,15 @@ body {
 
 .cv-container {
     position: relative;
-    display: flex;
+    display: flex ;
     background-color: white;
-    width: 595px;
+    width: 600px;
     height: 842px;
 }
 
 .sidebar {
-    width: 272px;
-    display: flex;
+    width: 270px;
+    display: flex ;
     flex-direction: column;
     justify-content: flex-end;
     color: white;
@@ -115,9 +115,65 @@ body {
 
 .main-content {
     padding-top: 35px;
+    margin :  10px;
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
+    /* border: #021957 solid 2px; */
+    color: var(--primary-color);
 
+    section {
+        width: 100%;
+        padding: 0 ;
+    
+    
+
+    h3::after {
+        content: '';
+        position: absolute;
+        background-color: var(--secondary-color);
+        bottom: -10px;
+        left: 0;
+        width: 20%;
+        height: 4px;
+    }
+
+}
+
+
+}
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .section-title {
+        font-size: 16px;
+        position: relative;
+    }
+
+    .exp-item {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+
+            h4 {
+                font-size: 14px;
+            }
+
+            span {
+                font-size: 12px;
+                color: var(--primary-color);
+            }
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
 }
