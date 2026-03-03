@@ -74,6 +74,9 @@ main {
 .soulignage {
     position: relative;
 }
+.outils{
+    margin-left: 12;
+}
 
 .soulignage::after {
 
