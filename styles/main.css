@@ -22,6 +22,7 @@ body {
         position: fixed;
         bottom: 20px;
         right: 60px;
+        
     }
     .telecharger:hover {
         background-color: var(--secondary-color);
