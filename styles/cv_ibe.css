@@ -1,4 +1,4 @@
-::root {
+:root {
     --bleu-saphir-fonce: #183684;
     --turquoise-vif: #19B9D4;
     --gris-clair: #C9C9C9;
@@ -6,15 +6,16 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 20px;
+    
     
 }
 .cv-container {
     max-width: 800px;
     margin: 0 auto;
+    align-items: center;
     background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 800px;
+    
 }
 .personal-info {
     display: flex;
@@ -22,6 +23,15 @@ body {
     flex-direction: column;
     background-color: var(--bleu-saphir-fonce);
     color: #fff;
+    padding-bottom: 30px;
+    h1{
+        font-size: clamp(rem, 5vw, 2rem);
+       
+    }
+    h2{
+        font-size: clamp(1rem, 5vw, 2rem);
+        margin-top: 0;
+    }
 }
 
 li{
@@ -67,12 +77,7 @@ li{
     .education-item {
         display: flex;
         flex-direction: row;
-<<<<<<< HEAD
         justify-content: space-around;
-=======
-        justify-content: space-between;
-        margin: 10px;
->>>>>>> parent of 76da6aa (Merge branch 'main' into moulaye)
         
     }
     h3{
@@ -153,7 +158,6 @@ li{
     background-color: var(--bleu-saphir-fonce);
 }
 
-<<<<<<< HEAD
 .retour {
             top: 80px;
             left: 10px;
@@ -398,5 +402,3 @@ i{
 
     .toast { display: none !important; }
 }
-=======
->>>>>>> parent of 76da6aa (Merge branch 'main' into moulaye)
