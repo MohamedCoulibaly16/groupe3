@@ -56,10 +56,13 @@ header nav ul.menu li a:hover {
 
 .mon-trait {
     width: 50%;              /* longueur */
-    height: 2%;             /* épaisseur */
-    background-color: #000000; /* couleur */
+    height: 1%;             /* épaisseur */
+    background-color:#0A3D62; /* couleur */
     border: none;            /* enlève le style par défaut */
     margin: 10px auto;       /* espace + centrage */
+    opacity: 1;
+    border-radius: 25px;
+    
 }
 
 .languestop {
@@ -69,12 +72,17 @@ header nav ul.menu li a:hover {
     text-align: center;
     padding: 0;
     gap: 20px;
+    color: white;
 
  }
 
  .anglais {
     text-align: center;
     padding: 0;
+    color: white;
+ }
+ .mescomp {
+    color: white;
  }
 
  .profiltext {
@@ -90,9 +98,6 @@ header nav ul.menu li a:hover {
     line-height: 1; /* espace réduit */
 }
 
-#btnTelecharger:hover {
-    background-color: #007bff !important;
-}
 .back-icon {
   position: absolute; /* ou relative si dans header */
   top: 50px;          /* ajuste selon ton header */
@@ -104,4 +109,4 @@ header nav ul.menu li a:hover {
   color: #000;        /* couleur de l’icône */
   background: none;   /* pas de fond */
 }
-main
+
