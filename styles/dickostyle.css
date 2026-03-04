@@ -7,17 +7,19 @@ header {
     padding: 10px 20px;
     background-color: #183684;
     position: relative;
-    height: 100px;
+    height: 150px;
+ main
 }
 
 /* Image profil */
 .profil {
-    width: 160px;
-    height: 160px;
+    height: 200px;
+    width: 200px;
     position: absolute;
-    border: 4px solid black;
-    top:    5px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
+    right: 20px;
+main
     border-radius: 50%; /* rond si tu veux */}
 
 /* Titre */
@@ -91,3 +93,15 @@ header nav ul.menu li a:hover {
 #btnTelecharger:hover {
     background-color: #007bff !important;
 }
+.back-icon {
+  position: absolute; /* ou relative si dans header */
+  top: 50px;          /* ajuste selon ton header */
+  right: 10px;        /* à droite */
+  cursor: pointer;
+}
+
+.back-icon i {
+  color: #000;        /* couleur de l’icône */
+  background: none;   /* pas de fond */
+}
+main
