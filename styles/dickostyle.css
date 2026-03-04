@@ -8,7 +8,6 @@ header {
     background-color: #183684;
     position: relative;
     height: 150px;
- main
 }
 
 /* Image profil */
@@ -19,7 +18,6 @@ header {
     top: 10px;
     left: 10px;
     right: 20px;
-main
     border-radius: 50%; /* rond si tu veux */}
 
 /* Titre */
@@ -107,7 +105,6 @@ header nav ul.menu li a:hover {
 
 .back-icon i {
   color: #000;        /* couleur de l’icône */
-<<<<<<< HEAD
   background: none;   /* pas de fond */}
 
   .addresses {
@@ -132,8 +129,6 @@ header nav ul.menu li a:hover {
 #btnTelecharger:hover {
     background-color: #4f5f91;
 }
-=======
-  background: none;   /* pas de fond */
-}
-main
->>>>>>> 9c279ea38dd0fb721670dfcb7c2a9ddc57ebddc9
+
+
+.contactez_moi{ text-align: center;}
