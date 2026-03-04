@@ -79,12 +79,12 @@
                         <hr>
                         <div class="experience-item">
                             <div>
-                                <h3>Gaspar Consult</h3>
-                                <p>Webmaster / Développeur d’Applications</p>
+                                <h3 style="margin-bottom: 0;">Gaspar Consult</h3>
+                                <p style="margin-bottom: 0;">Webmaster / Développeur d’Applications</p>
                             </div>
                             <div class="lieu">
-                                <h3>Bamako</h3>
-                                <p>2025 – présent</p>
+                                <h3 style="margin-bottom: 0;">Bamako</h3>
+                                <p style="margin-bottom: 0;">2025 – présent</p>
                             </div>
                         </div>
                         <ul>
@@ -109,39 +109,53 @@
                     <hr>
                     <div class="education-item">
                         <div >
-                            <h3>Université Saad Dahlab de Blida 01</h3>
-                            <p>Licence en Systèmes Informatiques</p>
+                            <h3 style="margin-bottom: 0;">Université Saad Dahlab de Blida 01</h3>
+                            <p style="margin-bottom: 0;">Licence en Systèmes Informatiques</p>
                         </div>
                         <div class="lieu">
-                            <h3>Algérie</h3>
-                            <p>2019 – 2022</p>
+                            <h3 style="margin-bottom: 0;">Algérie</h3>
+                            <p style="margin-bottom: 0;">2019 – 2022</p>
                         </div>
                     </div>
                     <div class="education-item">
                         <div style="width: 300px;">
-                            <h3>Lycée Niamperé Ballo de Baco djicoronie (LNBB) </h3>
-                            <p>Terminale Science Exacte (TSE)</p>
+                            <h3 style="margin-bottom: 0;">Lycée Niamperé Ballo de Baco djicoronie (LNBB) </h3>
+                            <p style="margin-bottom: 0;">Terminale Science Exacte (TSE)</p>
                         </div>
                         <div class="lieu">
-                            <h3>Bamako</h3>
-                            <p>2018 – 2019</p>
+                            <h3 style="margin-bottom: 0;">Bamako</h3>
+                            <p style="margin-bottom: 0;">2018 – 2019</p>
                         </div>
                     </div>
                     <div class="education-item">
                         <div style="width: 200px;">
-                            <h3>GoMyCode </h3>
-                            <p>Certification Data Science & Analyse de Données SQL, SQL Server, Python, Power BI, R, Analyse et visualisation des données</p>
+                            <h3 style="margin-bottom: 0;">GoMyCode </h3>
+                            <p style="margin-bottom: 0;">Certification Data Science & Analyse de Données SQL, SQL Server, Python, Power BI, R, Analyse et visualisation des données</p>
                         </div>
                         <div class="lieu">
-                            <h3>Algérie</h3>
-                            <p>février - Septembre 2024</p>
+                            <h3 style="margin-bottom: 0;">Algérie</h3>
+                            <p style="margin-bottom: 0;">février - Septembre 2024</p>
                         </div>
                     </div>
                 </div>
                </div>
             </div>
         </div>
-        <button type="button" class="telecharger" onclick="window.print()"><i class="fa-solid fa-download"></i> Télécharger le CV</button>
+        <div class="no-print">
+            <button type="button" class="telecharger" onclick="printCV()"><i class="fa-solid fa-download"></i> Télécharger le CV</button>
+        </div>
+        <script>
+            function printCV() {
+                   let win =window.print();
+                    const toast = document.createElement('div');
+                    toast.className = 'toast';
+                    toast.textContent = 'CV téléchargé avec succès !';
+                    document.body.appendChild(toast);
+                    setTimeout(() => {
+                        toast.remove();
+                    }, 3000);
+                }
+        </script>
     </section>
     </main>
     <footer>
