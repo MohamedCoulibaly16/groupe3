@@ -5,10 +5,13 @@
     <title>CV - Mohamed Coulibaly</title>
     <link rel="stylesheet" href="../styles/cv_moh.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
     
-    
+    <div class="message" id="message">
+        <p>CV Telecharger avec success !!!</p>
+    </div>
     <div>
         <header>
             <h1>Mohamed Coulibaly</h1>
@@ -119,10 +122,60 @@
         </section>
     </main>
 </div>
-<div class="message" id="message">
-        <p>CV Telecharger avec success !!!</p>
-    </div>
-<button class="telecharger">Télécharger le CV</button>
+
+<button class="telecharger" onclick="showMessage()">Télécharger le CV</button>
+<button onclick="window.print()">test</button>
+
+<a href="../index.html">
+        <div class="retour">
+
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M15 20L7 12L15 4" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <h3>Retour</h1>
+        </div>
+    </a>
+    <style>
+        .retour {
+            top: 30px;
+            left: 50px;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 4px 15px;
+            border-radius: 20px;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            transition-duration: 200ms;
+
+            svg {
+                height: 30px;
+                width: 100%;
+                fill: none;
+
+                path {
+                    stroke: var(--primary-color);
+                }
+            }
+        }
+
+        .retour:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transition-duration: 200ms;
+
+            path {
+                stroke: white;
+            }
+        }
+    </style>
 
 </body>
 </html>

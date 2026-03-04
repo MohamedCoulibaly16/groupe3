@@ -5,11 +5,145 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../styles/cv_moulaye.css">
+	<link rel="stylesheet" href="../styles/main.css">
 	<title>Document</title>
 </head>
 
 <body>
+	<div class="cv_moulaye_container">
+		<div id="header">
+			<img src="../images/moulaye.jpg" alt="">
+			<h1>Moulaye Amadou Dagnon</h1>
+			<span>Développeur Web</span>
+			<p>Développeur web passionné par la création de solutions efficaces et intuitives. Motivé par les défis
+				techniques et l'apprentissage continu, je maîtrise plusieurs technologies et aime travailler sur des
+				projets concrets qui apportent de la valeur aux utilisateurs.</p>
+		</div>
+		<div class="a">
+			<section id="sidebar">
+				<article id="coordonnees">
+					<h2>Coordonnées</h2>
+					<ul>
+						<li> <img src="../image/phone.png" alt=""> <span>74 34 69 63</span> </li>
+						<li> <img src="../image/email.png" alt=""> <span>moulayedagnon@mail.com</span> </li>
+						<li> <img src="../image/map.png" alt=""> <span>kalaban-coura</span> </li>
+					</ul>
+				</article>
+				<article id="competences">
+					<h2>Compétences</h2>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+				</article>
+				<article id="langues">
+					<h2>Langues</h2>
+					<ul>
+						<li>Français</li>
+						<li>Anglais</li>
+						<li>Bambara</li>
+					</ul>
+				</article>
+				<article id="#loisirs">
+					<h2>Loisirs</h2>
+					<ul>
+						<li>Musculation</li>
+						<li>Lecture</li>
+						<li>Veille technologique</li>
+					</ul>
+				</article>
+			</section>
+			<section id="main-content">
+				<article id="Experience">
+					<h2>Experience Professionelle </h2>
+					<div class="experience-item">
+						<span>Plutus 360 - Stage</span>
+						<span>Avril 2025 - Mai 2025</span>
+					</div>
+					<ul>
+						<li> Participer à toutes les phases d'un projet : Analyse, planification, développement, tests,
+							déploiement </li>
+						<li>Tout en travaillant sur un projet d'entreprise, j'ai contribué à la gestion d'un site
+							internet
+							de restaurant en intégrant</li>
+						<li>Technologies : HTML, CSS, Codelgniter, MySQL, Charts.j</li>
 
+					</ul>
+				</article>
+				<article id="Formation">
+					<h2>Formations & Certification</h2>
+					<ul>
+						<li> <span>2025 - actuel : </span> Formation en developpement d'application web et mobile </li>
+
+						<li><span>2024 - 2025 : </span> Licence Professionelle en Informatique </li>
+
+						<li> <span>2022 - 2024 : </span> DTS en Informatique </li>
+						<li><span>2024 - 2025 : </span> Formation en programme d'innovation entrepreneuriat (PIE) </li>
+
+						<li><span>2020 - 2021 : </span> Baccalauréat en Sciences Exact </li>
+					</ul>
+				</article>
+
+			</section>
+		</div>
+	</div>
+	  <button class="telecharger" onclick="showMessage()">Télécharger le CV</button>
+
+	  <!-- Bouton de retour -->
+
+    <a href="../index.html">
+        <div class="retour">
+
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M15 20L7 12L15 4" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <h3>Retour</h1>
+        </div>
+    </a>
+    <style>
+        .retour {
+            top: 30px;
+            left: 50px;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 4px 15px;
+            border-radius: 20px;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            transition-duration: 200ms;
+
+            svg {
+                height: 30px;
+                width: 100%;
+                fill: none;
+
+                path {
+                    stroke: var(--primary-color);
+                }
+            }
+        }
+
+        .retour:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transition-duration: 200ms;
+
+            path {
+                stroke: white;
+            }
+        }
+    </style>
+
+    <!-- Fin du bloc de code -->
 </body>
 
 </html>

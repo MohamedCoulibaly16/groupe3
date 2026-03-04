@@ -19,29 +19,29 @@ body {
 
 .left {
     width: 25%;
-    background: #7705f8;
+    background: #1505f8;
     color: white;
     padding: 20px;
- border-top: 5px solid #2c3e50;
- border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+
 }
 
 .profile-img {
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 50px;
+
 }
 
 .profile-img img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 8px solid white;
+    border: 2px solid white;
 }
 
 .left h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     font-size: 16px;
     letter-spacing: 1px;
 }
@@ -59,12 +59,14 @@ body {
 }
 .header{
     width: 100%;
-    background-color: whitesmoke;
+    background-color: gray;
+    flex: 100px;
     color: blue;
     padding: 20px;
 }
 .header h1 {
     font-size: 32px;
+    text-align: center;
     letter-spacing: 2px;
 }
 
@@ -74,6 +76,7 @@ body {
 
 .header h3 {
     color: blue;
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -82,7 +85,7 @@ body {
     margin-bottom: 10px;
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
-    color: #7705f8;
+    color:blue;
 }
 
 .job {
@@ -97,4 +100,60 @@ body {
 
 ul {
     margin-left: 20px;
+}
+/* 🔥 BOUTON EN BAS A DROITE */
+#downloadBtn{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    padding:10px 20px;
+    background:#2c3e50;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+#downloadBtn:hover{
+    background:#34495e;
+}
+
+/* VERSION IMPRESSION (PDF) */
+@media print{
+    body{
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+      .left {
+        background: #0b2ada !important;
+    }
+
+    .cv-container{
+        margin:0;
+        box-shadow:none;
+        width:100%;
+    }
+
+    #downloadBtn{
+        display:none;
+    }
+}
+.homeBtn{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    padding:10px 20px;
+    background:#555;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+@media print {
+    .homeBtn {
+        display: none;
+    }
+}
+.homeBtn:hover{
+    background:#333;
 }
