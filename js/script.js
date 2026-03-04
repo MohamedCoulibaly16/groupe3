@@ -10,5 +10,4 @@ const message = document.getElementById("message");
     }
     console.log("hesdfnjdfqdcfdf");
     
-    // Appelle la fonction quand tu veux
-    showMessage();
+    
