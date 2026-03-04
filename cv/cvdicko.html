@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="C:\Users\kalandew10\groupe3\styles\dickostyle.css">
+    <title>Portefolio Aliou DICKO</title>
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Optionnel : Bootstrap JS (pour menu mobile et composants interactifs) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <img src="C:\Users\kalandew10\Documents/profil.JPG" alt="Profil" class="profil">
+       <h1> Aliou DICKO</h1>
+        <!-- Icône croix bouton retour -->
+       <div class="back-icon">
+      <a href="index.html"><i class="bi bi-x fs-2"></i></a>
+       </div>
+       <a href="cv.pdf" class="download-btn" download>TELECHARGER</a>
+    </header>
+    <main>
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 p-3" style="background-color: #19B9D4">
+            <!-- Contenu de la colonne gauche -->
+            <div>
+                <div class="d-flex justify-content-center mt-5">
+                  <h2 style="color: black;">COMPETENCES</h2>
+                </div>
+            </div>
+           <ul>
+                <li>Administration Windows Server 2022 & 2024 (GPO, ADDS, DHCP, Utilisateurs, Disques)</li>
+                <li>Installation, configuration et administration réseaux Administration Mikrotik, Cisco </li>
+                <li>Nagios, PRTG</li>
+                <li>WordPress, HTML, CSS, Java</li>
+                <li>Bases de données Postgresql et MySQL</li>
+                <li>Power BI, Excel avancé, Stata et Kobotoolbox</li>
+                <li>Figma, canva</li>
+                <li>Versonning (Git, Github)</li>
+                <li>Outils collaboratifs</li>
+                <li>Gestion de projets</li>
+            </li>
+           </ul>
+             <hr class="mon-trait">
+               <h2 class="d-flex justify-content-center align-items-center gap-2 fw-bold">
+             <i class="bi bi-globe"></i>LANGUES</h2>
+
+             <div class="cont_lang">
+                  <ul class="languestop">
+                <li>Français</li>
+                <li>Fulfuldé</li>
+                <li>Moré</li>
+                  </ul>
+                  <ul class="anglais">Anglais</ul>
+            </div>
+            <hr class="mon-trait">
+           <h2 class="d-flex justify-content-center align-items-center gap-2 fw-bold">
+             <i class="bi-person-lines-fill"></i> CONTACT</h2>
+            <p><i class="bi bi-telephone-fill"></i> +226 75 54 93 69</p>
+            <p><i class="bi bi-envelope-fill"></i> alphaaloudicko93@gmail.com</p>
+            <p><i class="bi bi-geo-alt-fill"></i> Bamako, Mali</p>
+            </div>
+        <div class="col-md-6 bg-light p-3">
+            <!-- Contenu de la colonne droite -->
+           <h2 class="d-flex justify-content-center align-items-center gap-2 fw-bold">
+             <i class="bi bi-person-badge"></i> PROFIL</h2>
+            <p class="profiltext">Ingénieur de Travaux en Réseaux et Systèmes Informatiques, spécialisé en déploiement et maintenance d’infrastructures. Data Analyst (Power BI, Excel, statistiques) orienté analyse et optimisation des performances. Actuellement en formation Fullstack chez Orange Digital Center.</p>
+           <h2 class="d-flex justify-content-center align-items-center gap-2 my-4">
+               <i class="bi bi-mortarboard-fill"></i>EDUCATION</h2>
+               <p class="d-flex justify-content-left align-items-center gap-2 fw-semibold">
+                <i class="bi bi-circle"></i> Formations</p>
+                 <ul class="formations">
+                    <li><b>2025 :</b>Data analyst (Python, Numpay, Pandas, Power BI, Excel, Stata, Postgreesql, MySQL)</li>
+                    <li><b>2024 :</b> Wordpress, Mikrotik</li>
+                    <li><b>2023 :</b> Windows Server 2022</li>
+                 </ul>
+                  <p class="d-flex justify-content-left align-items-center gap-2 fw-semibold">
+                <i class="bi bi-circle"></i> Curus</p>
+                <div class="diplome">
+                    <P><b>2023 : Instut Supérieur de Technologies</b></P>
+               <ul>
+                 <p>Licence en Génie Informatique</p>
+                <li>Réseaux et Systèmes Informatiques</li>
+               </ul>
+                </div>
+
+           </div>
+         </div>
+        </div>
+       
+    </main
+      <button class="telecharger" onclick="showMessage()">Télécharger le CV</button>
+
+      <!-- Bouton de retour -->
+
+    <a href="../index.html">
+        <div class="retour">
+
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M15 20L7 12L15 4" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <h3>Retour</h1>
+        </div>
+    </a>
+    <style>
+        .retour {
+            top: 30px;
+            left: 50px;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 4px 15px;
+            border-radius: 20px;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            transition-duration: 200ms;
+
+            svg {
+                height: 30px;
+                width: 100%;
+                fill: none;
+
+                path {
+                    stroke: var(--primary-color);
+                }
+            }
+        }
+
+        .retour:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transition-duration: 200ms;
+
+            path {
+                stroke: white;
+            }
+        }
+    </style>
+
+    <!-- Fin du bloc de code -->
+  </body>
+</html>
