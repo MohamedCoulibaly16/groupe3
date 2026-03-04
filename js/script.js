@@ -41,6 +41,7 @@ function downloadPDF(element) {
     setTimeout(() => {
         toast.style.top = "-80px"
     }, 3500)
+} 
 }
 }
 // const message = document.getElementById("message");
