@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Ayouba MORBA</title>
+
     <link rel="stylesheet" href="../styles/morbin.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
@@ -12,7 +13,6 @@
 
 <body>
     <div class="cv-container">
-
         <!-- DEBUT Partie gauche -->
         <aside class="sidebar">
 
@@ -126,7 +126,6 @@
         </main>
     </div>
 
-  <button class="telecharger" onclick="showMessage()">Télécharger le CV</button>
 
     <!-- Bouton de retour -->
 
@@ -182,6 +181,12 @@
     </style>
 
     <!-- Fin du bloc de code -->
+
+    <!-- Téléchargement du fichier PDF -->
+    <button class="telecharger" data-documentname="Ayouba MORBA.pdf" onclick="downloadPDF(this)">Télécharger le
+        CV</button>
+    <script src="../js/script.js" defer></script>
+
 </body>
 
 </html>
