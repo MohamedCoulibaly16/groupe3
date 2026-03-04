@@ -53,7 +53,7 @@ body {
 
 
 .right {
-    width: 85%;
+    width: 95%;
     padding: 10px;
     flex: 100px; 
 }
@@ -100,4 +100,60 @@ body {
 
 ul {
     margin-left: 20px;
+}
+/* 🔥 BOUTON EN BAS A DROITE */
+#downloadBtn{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    padding:10px 20px;
+    background:#2c3e50;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+#downloadBtn:hover{
+    background:#34495e;
+}
+
+/* VERSION IMPRESSION (PDF) */
+@media print{
+    body{
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+      .left {
+        background: #0b2ada !important;
+    }
+
+    .cv-container{
+        margin:0;
+        box-shadow:none;
+        width:100%;
+    }
+
+    #downloadBtn{
+        display:none;
+    }
+}
+.homeBtn{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    padding:10px 20px;
+    background:#555;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+@media print {
+    .homeBtn {
+        display: none;
+    }
+}
+.homeBtn:hover{
+    background:#333;
 }
