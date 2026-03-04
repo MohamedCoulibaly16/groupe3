@@ -20,9 +20,10 @@
        <div class="back-icon">
       <a href="index.html"><i class="bi bi-x fs-2"></i></a>
        </div>
+       <a href="cv.pdf" class="download-btn" download>TELECHARGER</a>
     </header>
     <main>
-       <div class="container-fluid">
+     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 p-3" style="background-color: #19B9D4">
             <!-- Contenu de la colonne gauche -->
@@ -45,9 +46,9 @@
             </li>
            </ul>
              <hr class="mon-trait">
-               <div class="d-flex justify-content-center">
-                  <h2 style="color: black;">LANGUES</h2>
-               </div>
+               <h2 class="d-flex justify-content-center align-items-center gap-2 fw-bold">
+             <i class="bi bi-globe"></i>LANGUES</h2>
+
              <div class="cont_lang">
                   <ul class="languestop">
                 <li>Français</li>
@@ -57,6 +58,8 @@
                   <ul class="anglais">Anglais</ul>
             </div>
             <hr class="mon-trait">
+           <h2 class="d-flex justify-content-center align-items-center gap-2 fw-bold">
+             <i class="bi-person-lines-fill"></i> CONTACT</h2>
             <p><i class="bi bi-telephone-fill"></i> +226 75 54 93 69</p>
             <p><i class="bi bi-envelope-fill"></i> alphaaloudicko93@gmail.com</p>
             <p><i class="bi bi-geo-alt-fill"></i> Bamako, Mali</p>
@@ -65,7 +68,6 @@
             <!-- Contenu de la colonne droite -->
            <h2 class="d-flex justify-content-center align-items-center gap-2 fw-bold">
              <i class="bi bi-person-badge"></i> PROFIL</h2>
-
             <p class="profiltext">Ingénieur de Travaux en Réseaux et Systèmes Informatiques, spécialisé en déploiement et maintenance d’infrastructures. Data Analyst (Power BI, Excel, statistiques) orienté analyse et optimisation des performances. Actuellement en formation Fullstack chez Orange Digital Center.</p>
            <h2 class="d-flex justify-content-center align-items-center gap-2 my-4">
                <i class="bi bi-mortarboard-fill"></i>EDUCATION</h2>
@@ -89,7 +91,63 @@
            </div>
          </div>
         </div>
-        <button class="btn btn-secondary w-100" id="btnTelecharger">TELECHARGER</button>
+       
     </main
+      <button class="telecharger" onclick="showMessage()">Télécharger le CV</button>
+
+      <!-- Bouton de retour -->
+
+    <a href="../index.html">
+        <div class="retour">
+
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M15 20L7 12L15 4" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <h3>Retour</h1>
+        </div>
+    </a>
+    <style>
+        .retour {
+            top: 30px;
+            left: 50px;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 4px 15px;
+            border-radius: 20px;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            transition-duration: 200ms;
+
+            svg {
+                height: 30px;
+                width: 100%;
+                fill: none;
+
+                path {
+                    stroke: var(--primary-color);
+                }
+            }
+        }
+
+        .retour:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transition-duration: 200ms;
+
+            path {
+                stroke: white;
+            }
+        }
+    </style>
+
+    <!-- Fin du bloc de code -->
   </body>
 </html>
