@@ -9,5 +9,7 @@ const message = document.getElementById("message");
         }, 3000); // disparaît après 3 secondes
     }
     console.log("hesdfnjdfqdcfdf");
+
+const test = document.getElementById(test_telechargement)
     
     
