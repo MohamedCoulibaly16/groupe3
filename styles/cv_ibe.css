@@ -1,4 +1,4 @@
-:root {
+::root {
     --bleu-saphir-fonce: #183684;
     --turquoise-vif: #19B9D4;
     --gris-clair: #C9C9C9;
@@ -6,15 +6,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    
+    padding: 20px;
     
 }
 .cv-container {
     max-width: 800px;
     margin: 0 auto;
-    align-items: center;
     background-color: #fff;
-    
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .personal-info {
     display: flex;
@@ -22,24 +22,19 @@ body {
     flex-direction: column;
     background-color: var(--bleu-saphir-fonce);
     color: #fff;
-    padding-bottom: 30px;
-    h1{
-        font-size: clamp(rem, 5vw, 2rem);
-       
-    }
-    h2{
-        font-size: clamp(1rem, 5vw, 2rem);
-        margin-top: 0;
-    }
+}
+
+li{
+    padding: 8PX;
 }
 .cv-content {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 35% 65%;
 }
 .info{
-    background-color: var(--turquoise-vif);
+    background-color: #182a5a;
     color: #fff;
-    padding: 15px;
+    padding: 10px;
     /* push content down so profile image doesn't overlap */
     padding-top: 100px;
 }
@@ -62,7 +57,6 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 10px;
     }
      h3{
         font-size: large;
@@ -73,8 +67,12 @@ body {
     .education-item {
         display: flex;
         flex-direction: row;
+<<<<<<< HEAD
         justify-content: space-around;
+=======
+        justify-content: space-between;
         margin: 10px;
+>>>>>>> parent of 76da6aa (Merge branch 'main' into moulaye)
         
     }
     h3{
@@ -85,9 +83,9 @@ body {
 .divider-profile {
     position: relative;
     width: 2px;
-    height: 150px;
+    height: 200px;
     background-color: var(--bleu-saphir-fonce);
-    margin: 40px auto;
+    
 }
 .divider-profile::before {
     content: "";
@@ -103,9 +101,8 @@ body {
 .divider-experience {
     position: relative;
     width: 2px;
-    height: 250px;
+    height: 350px;
     background-color: var(--bleu-saphir-fonce);
-    margin: 40px auto;
 }
 .divider-experience::before {
     content: "";
@@ -122,7 +119,7 @@ body {
 .divider-education {
     position: relative;
     width: 2px;
-    height: 150px;
+    height: 130px;
     background-color: var(--bleu-saphir-fonce);
 }
 .divider-education::before {
@@ -156,6 +153,7 @@ body {
     background-color: var(--bleu-saphir-fonce);
 }
 
+<<<<<<< HEAD
 .retour {
             top: 80px;
             left: 10px;
@@ -191,13 +189,18 @@ body {
             }
         }
 
-
+i{
+    padding: 8px;
+}
 @media screen and (max-width: 768px) {
     p{
         font-size: 12px;
     }
     li{
         font-size: 12px;
+    }
+    i{
+        padding: 0;
     }
 
     .retour {
@@ -280,7 +283,7 @@ body {
     }
 
     .info{
-    background-color: var(--turquoise-vif);
+    background-color: #182a5a;
     color: #fff;
     padding: 15px;
 }
@@ -293,7 +296,7 @@ body {
 .divider-profile {
     position: relative;
     width: 1px;
-    height: 200px;
+    height: 190px;
     background-color: var(--bleu-saphir-fonce);
     margin: 40px auto;
 }
@@ -311,7 +314,7 @@ body {
 .divider-experience {
     position: relative;
     width: 1px;
-    height: 310px;
+    height: 390px;
     background-color: var(--bleu-saphir-fonce);
     margin: 40px auto;
 }
@@ -330,7 +333,7 @@ body {
 .divider-education {
     position: relative;
     width: 1px;
-    height: 110px;
+    height: 90px;
     background-color: var(--bleu-saphir-fonce);
 }
 .divider-education::before {
@@ -355,11 +358,45 @@ body {
 
 }
 
+ .toast {
+        position: fixed;
+        right: 60px;
+        bottom: 80px;
+        background: rgba(0, 0, 0, 0.85);
+        color: #fff;
+        padding: 10px 16px;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+        z-index: 9999;
+        font-size: 0.95rem;
+        opacity: 0;
+        transform: translateY(8px);
+        animation: toast-in 180ms forwards;
+    }
 
+    @keyframes toast-in {
+        to { opacity: 1; transform: translateY(0); }
+    }
 
 @media print {
     body{
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
+
+    .telecharger {
+        display: none;
+    }
+
+    .no-print {
+    display: none;
+  }
+
+    .retour {
+        display: none;
+    }
+
+    .toast { display: none !important; }
 }
+=======
+>>>>>>> parent of 76da6aa (Merge branch 'main' into moulaye)
