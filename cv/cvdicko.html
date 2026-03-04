@@ -23,16 +23,18 @@
        <a href="cv.pdf" class="download-btn" download>TELECHARGER</a>
     </header>
     <main>
-     <div class="container-fluid">
+<a href="cv/CV_AliouDICKO.pdf" download>
+          <button id="btnTelecharger">Télécharger le CV</button></a>
+       <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 p-3" style="background-color: #19B9D4">
+            <div class="col-md-6 p-3" style="background-color: #6277ac">
             <!-- Contenu de la colonne gauche -->
             <div>
                 <div class="d-flex justify-content-center mt-5">
-                  <h2 style="color: black;">COMPETENCES</h2>
+                  <h2 style="color: white;">COMPETENCES</h2>
                 </div>
             </div>
-           <ul>
+           <ul class="mescomp">
                 <li>Administration Windows Server 2022 & 2024 (GPO, ADDS, DHCP, Utilisateurs, Disques)</li>
                 <li>Installation, configuration et administration réseaux Administration Mikrotik, Cisco </li>
                 <li>Nagios, PRTG</li>
@@ -46,9 +48,9 @@
             </li>
            </ul>
              <hr class="mon-trait">
-               <h2 class="d-flex justify-content-center align-items-center gap-2 fw-bold">
-             <i class="bi bi-globe"></i>LANGUES</h2>
-
+               <div class="d-flex justify-content-center">
+                  <h2 style="color: white;">LANGUES</h2>
+               </div>
              <div class="cont_lang">
                   <ul class="languestop">
                 <li>Français</li>
@@ -57,12 +59,12 @@
                   </ul>
                   <ul class="anglais">Anglais</ul>
             </div>
-            <hr class="mon-trait">
-           <h2 class="d-flex justify-content-center align-items-center gap-2 fw-bold">
-             <i class="bi-person-lines-fill"></i> CONTACT</h2>
-            <p><i class="bi bi-telephone-fill"></i> +226 75 54 93 69</p>
+             <hr class="mon-trait">
+            <div class="addresses">
+            <p><i class="bi bi-telephone-fill "></i> +226 75 54 93 69</p>
             <p><i class="bi bi-envelope-fill"></i> alphaaloudicko93@gmail.com</p>
             <p><i class="bi bi-geo-alt-fill"></i> Bamako, Mali</p>
+            </div>
             </div>
         <div class="col-md-6 bg-light p-3">
             <!-- Contenu de la colonne droite -->
@@ -91,7 +93,6 @@
            </div>
          </div>
         </div>
-        <button class="btn btn-secondary w-100" id="btnTelecharger">TELECHARGER</button>
       </main>
   </body>
 </html>

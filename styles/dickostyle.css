@@ -72,12 +72,17 @@ header nav ul.menu li a:hover {
     text-align: center;
     padding: 0;
     gap: 20px;
+    color: white;
 
  }
 
  .anglais {
     text-align: center;
     padding: 0;
+    color: white;
+ }
+ .mescomp {
+    color: white;
  }
 
  .profiltext {
@@ -105,25 +110,3 @@ header nav ul.menu li a:hover {
   background: none;   /* pas de fond */
 }
 
-
-.download-btn {
-  position: fixed;       /* position fixe */
-  right: 20px;           /* distance du bord droit */
-  top: 50%;              /* centré verticalement */
-  transform: translateY(-50%);
-
-  background-color: #007bff;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: 0.3s ease;
-}
-
-/* Effet au survol */
-.download-btn:hover {
-  background-color: #0056b3;
-}
