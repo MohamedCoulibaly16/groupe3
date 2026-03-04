@@ -67,12 +67,17 @@ header nav ul.menu li a:hover {
     text-align: center;
     padding: 0;
     gap: 20px;
+    color: white;
 
  }
 
  .anglais {
     text-align: center;
     padding: 0;
+    color: white;
+ }
+ .mescomp {
+    color: white;
  }
 
  .profiltext {
@@ -100,5 +105,27 @@ header nav ul.menu li a:hover {
 
 .back-icon i {
   color: #000;        /* couleur de l’icône */
-  background: none;   /* pas de fond */
+  background: none;   /* pas de fond */}
+
+  .addresses {
+    color: white;         /* couleur du texte */
+}
+
+
+#btnTelecharger {
+    padding: 12px 20px;
+    background-color: #6277ac;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    position: fixed;       /* le fixe par rapport à la fenêtre */
+    top: 50%;              /* verticalement centré */
+    right: 20px;           /* distance du bord droit */
+}
+
+#btnTelecharger:hover {
+    background-color: #4f5f91;
 }
