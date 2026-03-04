@@ -1,4 +1,4 @@
- @include "main.css";
+ @import url('main.css');
  /* Les couleurs de base */
 
     :root {
@@ -156,27 +156,7 @@
         margin-top: 1em;
         padding: 0.5em;
     }
-    .telecharger {
-        display: block;
-        margin: 20px auto;
-        padding: 10px 20px;
-        background-color: var(--primary-color);
-        color: var(--blanc);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        position: fixed;
-        bottom: 20px;
-        right: 60px;
-        font-size: 1em;
-    }
-    .telecharger:hover {
-        background-color: var(--secondary-color);
-        transition-duration: 200ms;
-        transform: translateY(-10px);
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.488);
-        
-    }
+    
 
 
     /************** Mohamed Coulibaly style ****************/
@@ -198,26 +178,26 @@
 
     } */
 
-    .message {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    background-color: #2da44e;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease, top 0.4s ease;
-     z-index: 9999;
-}
+    /* .telecharger {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: var(--blanc);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 60px;
+        font-size: 1em;
+    }
+    .telecharger:hover {
+        background-color: var(--secondary-color);
+        transition-duration: 200ms;
+        transform: translateY(-10px);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.488);
+        
+    } */
 
-.message.show {
-    opacity: 1;
-    top: 40px;
-}
+   
