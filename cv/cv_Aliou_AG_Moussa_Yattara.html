@@ -149,10 +149,15 @@
       </main>
       </div>
     </div>
-     <div class="download">
-            <a href="../image/yattara.pdf" download="cv_Aliou_AG_Moussa_Yattara.pdf">
-               <button class="telecharger">Télécharger le CV</button>
-            </a>       
+            <a href="" download="cv_Aliou_AG_Moussa_Yattara.pdf">
+               <button id="telecharger">Télécharger le CV</button>
+            </a>   
+            <script>
+              document.getElementById("telecharger").addEventListener("click", function(){
+                window.print();
+              });
+            </script>    
           </div>
+          
   </body>
 </html>
