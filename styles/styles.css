@@ -239,6 +239,18 @@ footer {
   }
 }
 
+.morbin-img {}
+
+.morbin-container {
+    height: 100px;
+}
+
+#toast {
+    position: fixed;
+    height: 100px;
+    width: 50%;
+    color: blue;
+}
 @media only screen and (max-width: 680px) {
   #card-container {
     grid-template-columns: 1fr;

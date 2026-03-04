@@ -14,7 +14,7 @@ body {
 
 
  .telecharger {
-        display: block;
+        display: relative;
         margin: 20px auto;
         padding: 10px 20px;
         background-color: var(--primary-color);
@@ -22,7 +22,6 @@ body {
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        position: fixed;
         bottom: 20px;
         right: 60px;
         font-size: 1em;
