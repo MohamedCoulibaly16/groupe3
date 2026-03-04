@@ -91,3 +91,5 @@ const callback1 = function (entries, observer) {
 };
 const t1 = new IntersectionObserver(callback1, options1);
 document.querySelectorAll(".anim-card").forEach((el) => t1.observe(el));
+}
+
