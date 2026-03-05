@@ -133,9 +133,15 @@ ul {
         margin:0;
         box-shadow:none;
         width:100%;
+        }
+}
+@media print {
+    #butt {
+        display: none;
     }
-
-    #downloadBtn{
-        display:none;
+}
+@media print {
+    #ret{
+        display: none;
     }
 }
