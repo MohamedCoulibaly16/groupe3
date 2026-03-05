@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <title>CV - BERTHE</title>
     <link rel="stylesheet" href="../styles/cv_idrissa.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
+<div class="container_telechargement">
+            <div class="retourMain" id="ret">
+                <h3><i class="fa-solid fa-arrow-left" ></i> <a href="../index.html">Retour</a></h3>
+            </div>
+            <div>
+                <button type="button" class="telecharger"  id="butt"><i class="fa-solid fa-download"></i> Télécharger le CV</button>
+            </div>
+        </div>
 <div class="container">
-
     <div class="left">
 
         <div class="profile-img">
@@ -110,71 +118,16 @@
                 <li>MANGA</li>
             </ul>
         </section>
-         <a href="../index.html" class="homeBtn">Retour à l'accueil</a>
-
-    <button id="downloadBtn">Télécharger en PDF</button>
+ 
 
 </div>
 
 <script>
-document.getElementById("downloadBtn").addEventListener("click", function(){
+document.getElementById("butt").addEventListener("click", function(){
     window.print();
 });
 </script>
     </div>
-  <!-- Bouton de retour -->
-
-    <a href="../index.html">
-        <div class="retour">
-
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <path d="M15 20L7 12L15 4" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                </g>
-            </svg>
-            <h3>Retour</h1>
-        </div>
-    </a>
-    <style>
-        .retour {
-            top: 30px;
-            left: 50px;
-            position: fixed;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            padding: 4px 15px;
-            border-radius: 20px;
-            border: 2px solid var(--primary-color);
-            color: var(--primary-color);
-            transition-duration: 200ms;
-
-            svg {
-                height: 30px;
-                width: 100%;
-                fill: none;
-
-                path {
-                    stroke: var(--primary-color);
-                }
-            }
-        }
-
-        .retour:hover {
-            background-color: var(--primary-color);
-            color: white;
-            transition-duration: 200ms;
-
-            path {
-                stroke: white;
-            }
-        }
-    </style>
-
-    <!-- Fin du bloc de code -->
+ 
 </body>
 </html>
