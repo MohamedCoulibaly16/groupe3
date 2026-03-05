@@ -1,77 +1,77 @@
 :root {
-    --primary-color: #183684;
-    --secondary-color: #19B9D4;
-    --tertiary-color: #C9C9C9;
-    --font-main: 'Inter', sans-serif;
-    --blanc: #fff;
+  --primary-color: #183684;
+  --secondary-color: #19b9d4;
+  --tertiary-color: #c9c9c9;
+  --font-main: "Inter", sans-serif;
+  --blanc: #fff;
 }
 
 body {
-    font-family: var(--font-main);
+  font-family: var(--font-main);
 }
 
+.telecharger {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
 
- .telecharger{
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
+  padding: 12px 25px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
 
-    padding: 12px 25px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-
-    z-index: 1000;
+  z-index: 1000;
 }
 
-.telecharger:hover{
-    background-color: var(--secondary-color);
-    transform: translateY(-5px);
-    transition: 0.2s;
+.telecharger:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-5px);
+  transition: 0.2s;
 }
 
+.message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 
-     .message {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    background-color: #2da44e;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease, top 0.4s ease;
-     z-index: 9999;
+  background-color: #2da44e;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.4s ease,
+    top 0.4s ease;
+  z-index: 9999;
 }
 
 .message.show {
-    opacity: 1;
-    top: 40px;
+  opacity: 1;
+  top: 40px;
 }
 
- .container_telechargement{
-                display: flex;
-                justify-content: space-around;
-                padding: 20px;
-                align-items: center;
-            }
-            .retourMain {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                cursor: pointer;
-                color: var(--primary-color);
-            }
+.container_telechargement {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+}
+.retourMain {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
 
-            i{
-                padding: 8px;
-            }
+i {
+  padding: 8px;
+}
