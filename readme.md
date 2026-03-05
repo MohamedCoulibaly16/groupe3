@@ -1,6 +1,6 @@
 # Portfolio d’Équipe
 
-## 🎯 Objectif du projet
+## Objectif du projet
 
 Réaliser un portfolio d’équipe interactif présentant les 11 membres du groupe.
 
@@ -8,10 +8,10 @@ Le projet est réalisé en HTML, CSS et JavaScript purs, à partir de maquettes 
 
 ---
 
-## 🛠 Technologies utilisées
+## Technologies utilisées
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - Figma (maquettage)
 - GitHub (versioning et gestion des tâches)
@@ -19,11 +19,11 @@ Le projet est réalisé en HTML, CSS et JavaScript purs, à partir de maquettes 
 
 ---
 
-## 🧠 Organisation du travail
+## Organisation du travail
 
 Le projet est organisé en tâches via **GitHub Projects**.
 
-## 📌 Règles de travail (OBLIGATOIRES)
+## Règles de travail (OBLIGATOIRES)
 
 - Une tâche = une branche
 - Une branche = une Pull Request
