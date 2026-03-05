@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  /* @include "main.css"; */
 >>>>>>> cb6529f5d2d934441aa80ae8392bb41fa29bb30c
+=======
+
+>>>>>>> a29f709bed99e20c6dcc709002018a18dc8f1dc1
  @import url('main.css');
  /* Les couleurs de base */
 
@@ -161,8 +165,32 @@
         padding: 0.5em;
     }
 <<<<<<< HEAD
-    
+<<<<<<< HEAD
+=======
 
+   
+
+    .message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+>>>>>>> a29f709bed99e20c6dcc709002018a18dc8f1dc1
+    
+    background-color: #2da44e;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, top 0.4s ease;
+     z-index: 9999;
+}
+
+<<<<<<< HEAD
 
     /************** Mohamed Coulibaly style ****************/
 
@@ -211,6 +239,8 @@
 <<<<<<< HEAD
    
 =======
+=======
+>>>>>>> a29f709bed99e20c6dcc709002018a18dc8f1dc1
 .message.show {
     opacity: 1;
     top: 40px;
@@ -236,6 +266,7 @@
 
     header {
         width: 100% !important;
+        height: 200px !important;
     }
 
     /* éviter que la photo sorte */
@@ -277,5 +308,53 @@ body {
 
 }
 
+<<<<<<< HEAD
 }
 >>>>>>> cb6529f5d2d934441aa80ae8392bb41fa29bb30c
+=======
+}   
+
+
+    /************** Mohamed Coulibaly style ****************/
+
+    /* message de confirmation */
+    /* .message{
+        
+        border: 1px solid green;
+        width: 20vw;
+        margin: auto;
+        background-color: #2da44e6e;
+        padding: 20px;
+        border-radius: 10px;
+        position: static;
+        top: 20px;
+        right: 40vw;
+        
+        
+
+    } */
+
+    /* .telecharger {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: var(--blanc);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 60px;
+        font-size: 1em;
+    }
+    .telecharger:hover {
+        background-color: var(--secondary-color);
+        transition-duration: 200ms;
+        transform: translateY(-10px);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.488);
+        
+    } */
+
+   
+>>>>>>> a29f709bed99e20c6dcc709002018a18dc8f1dc1

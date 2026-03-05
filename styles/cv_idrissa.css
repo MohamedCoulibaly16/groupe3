@@ -139,21 +139,3 @@ ul {
         display:none;
     }
 }
-.homeBtn{
-    position:absolute;
-    bottom:20px;
-    left:20px;
-    padding:10px 20px;
-    background:#555;
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
-}
-@media print {
-    .homeBtn {
-        display: none;
-    }
-}
-.homeBtn:hover{
-    background:#333;
-}

@@ -3,7 +3,7 @@
     --secondary-color: #19B9D4;
     --tertiary-color: #C9C9C9;
     --font-main: 'Inter', sans-serif;
-    --blanc: #fff;
+    --blanc: #f30707;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
         border-radius: 5px;
         cursor: pointer;
         bottom: 20px;
-        right: 60px;
+        right: 5%;
         font-size: 1em;
         
     }
@@ -57,3 +57,21 @@ body {
     opacity: 1;
     top: 40px;
 }
+
+ .container_telechargement{
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+                align-items: center;
+            }
+            .retourMain {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                color: var(--primary-color);
+            }
+
+            i{
+                padding: 8px;
+            }
