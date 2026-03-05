@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - BERTHE</title>
+    <link rel="stylesheet" href="../styles/cv_idrissa.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left">
+
+        <div class="profile-img">
+            <img src="../images/beid.png" alt="Profile Photo">
+        </div>
+
+        <section>
+            <h2>EDUCATION</h2>
+            <p><strong>2018 - 2019</strong><br>
+            BEPC WEND-MANEGDA WAGA200<br>
+           </p>
+
+            <p><strong>2021 - 2022</strong><br>
+            BACCALOREAT LYCEE PRIVEE LE FASO<br>
+           </p>
+
+             <p><strong>2024 - 2025</strong><br>
+            LICENCE ANNALYSE PROGRAMMEUR<br>
+            </p>
+        </section>
+
+        <section>
+            <h2>COMPETENCE</h2>
+            <ul>
+                <li>BASE DE DONNEE: MYSQL</li>
+                <li>LANGUAGE: PYTHON JAVA[POO]</li>
+                <li>CONCEPTION SI: UML MERISE</li>
+                <li>METHODOLOGIE DE GESTION DE PROJET</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>LANGUAGES</h2>
+            <ul>
+                <li>FRANCAIS</li>
+                <li>ANGLAIS L2</li>
+                <li>BAMBARA</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>CONTACT</h2>
+            <p>+22392726362</p>
+            <p>bertheidrissa9272@gmail.com</p>
+            
+        </section>
+
+    </div>
+
+    <div class="right">
+    <div class="beid">
+        <div class="header">
+            <h1>BERTHE<span>IDRISSA</span></h1>
+            <h3>ANNALYSE PROGRAMMEUR</h3>
+        </div>
+</div>
+        <section>
+            <h2> PROFILE INFO</h2>
+            <p>
+                Développeur web passionné, spécialisé en Python et
+                 Django, avec une expérience dans la conception 
+                 d'applications web structurées en architecture MVT. 
+                 Rigoureux, organisé(e) et orienté solutions, 
+                 je maîtrise la gestion de bases de données MySQL 
+                 ainsi que les outils de versioning comme Git. 
+                 Motivé par l'innovation technologique, 
+                 je développe des solutions numériques à impact,
+                  notamment dans les domaines éducatif et sanitaire.
+            </p>
+        </section>
+
+        <section>
+            <h2>EXPERIENCE</h2>
+
+            <div class="job">
+                <h4>Développeur WEB </h4>
+                <span> 2024</span>
+        
+            </div>
+
+            <div class="job">
+                <h4>STAGIAIRE EN MAINTENANCE INFORMATIQUE</h4>
+                <span> 2025</span>
+            </div>
+
+            <div class="job">
+                <h4>STAGIAIRE EN MAINTENANCE RESEAU INFORMATIQUE </h4>
+                <span> 2025</span>
+        
+            </div>
+
+        </section>
+
+        <section>
+            <h2>LOSIR</h2>
+            <ul>
+                <li>LECTURE</li>
+                <li>JEUX</li>
+                <li>MANGA</li>
+            </ul>
+        </section>
+         <a href="../index.html" class="homeBtn">Retour à l'accueil</a>
+
+    <button id="downloadBtn">Télécharger en PDF</button>
+
+</div>
+
+<script>
+document.getElementById("downloadBtn").addEventListener("click", function(){
+    window.print();
+});
+</script>
+    </div>
+  <!-- Bouton de retour -->
+
+    <a href="../index.html">
+        <div class="retour">
+
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M15 20L7 12L15 4" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <h3>Retour</h1>
+        </div>
+    </a>
+    <style>
+        .retour {
+            top: 30px;
+            left: 50px;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 4px 15px;
+            border-radius: 20px;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            transition-duration: 200ms;
+
+            svg {
+                height: 30px;
+                width: 100%;
+                fill: none;
+
+                path {
+                    stroke: var(--primary-color);
+                }
+            }
+        }
+
+        .retour:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transition-duration: 200ms;
+
+            path {
+                stroke: white;
+            }
+        }
+    </style>
+
+    <!-- Fin du bloc de code -->
+</body>
+</html>
