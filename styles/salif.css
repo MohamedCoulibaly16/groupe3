@@ -248,3 +248,35 @@
             color: var(--text-grey);
             line-height: 1.6;
         }
+
+        /* Bouton Télécharger le PDF */
+.download-pdf {
+    margin-top: 12px;
+}
+
+.btn-pdf {
+    background-color: #ffffff;
+    color: var(--navy-blue);
+    border: 2px solid var(--navy-blue);
+    padding: 8px 14px;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.18s ease, transform 0.08s ease;
+}
+
+.btn-pdf:hover {
+    background-color: var(--navy-blue);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.btn-pdf:active {
+    transform: translateY(0);
+}
+
+/* Ne pas afficher le bouton lors de l'impression */
+@media print {
+    .download-pdf { display: none !important; }
+}
