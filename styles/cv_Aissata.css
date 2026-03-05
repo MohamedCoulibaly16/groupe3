@@ -7,9 +7,7 @@
 body {
     box-sizing: border-box;
     padding: 0;
-    margin: 50px 0;
     background-color: rgb(231, 231, 231);
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -17,6 +15,7 @@ body {
 .cv-container {
     position: relative;
     display: flex ;
+    margin: 0 auto;
     background-color: white;
     width: 600px;
     height: 842px;
@@ -31,11 +30,6 @@ body {
     background-color: var(--side-bg);
     padding: 18px 31px;
 }
-
-.sidebar-content {}
-
-.main-content {}
-
 .sidebar-section {
     h3 {
         font-size: 16px;
