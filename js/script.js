@@ -72,7 +72,7 @@ document.body.appendChild(pdfModule)
 function downloadPDF(element, name) {
 
   const path = element.dataset.docpath
-
+  console.log("Button clicked, path:", path);
   const link = document.createElement("a");
   link.href = path;      // chemin du fichier
   link.download = name + '.pdf';  // nom pour le téléchargement
