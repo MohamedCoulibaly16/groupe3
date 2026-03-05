@@ -10,10 +10,27 @@
     </title>
 
     <link rel="stylesheet" href="../styles/cv_foune.css">
+    <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
+
+    <div class="container_telechargement">
+            <div class="retourMain">
+                <h3><i class="fa-solid fa-arrow-left"></i> <a href="../index.html">Retour</a></h3>
+            </div>
+            <div>
+                
+             <button type="button" class="telecharger" id="telecharger-foune"><i class="fa-solid fa-download"></i> Télécharger le CV</button>
+                 <script>
+              document.getElementById("telecharger-foune").addEventListener("click", function(){
+                window.print();
+              });
+            </script>  
+            </div>
+        </div>
      
-    
 
     <div class="cv-container">
         <div class="info">
@@ -115,5 +132,3 @@
  
      
 </body>
-
-</html>
