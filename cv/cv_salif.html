@@ -4,109 +4,380 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Salif Modibo Keita</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/salif.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy-blue: #323b4c;
+            --sidebar-bg: #e8eaec;
+            --text-dark: #333333;
+            --text-grey: #555555;
+            --border-grey: #c0c5cb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #525659;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .cv-container {
+            width: 210mm;
+            height: 297mm;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* --- EN-TÊTE --- */
+        .header {
+            display: flex;
+            height: 160px;
+            background-color: var(--navy-blue);
+            color: white;
+        }
+
+        .header-left {
+            width: 35%;
+        }
+
+        .header-right {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+        }
+
+        .header-right h1 {
+            font-size: 34px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .header-right h2 {
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* --- CONTENU PRINCIPAL --- */
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+        }
+
+        /* --- SIDEBAR GAUCHE --- */
+        .sidebar {
+            width: 35%;
+            background-color: var(--sidebar-bg);
+            padding: 0 35px 30px 35px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .photo-container {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            border: 8px solid #ffffff;
+            margin: -95px auto 40px auto;
+            background-color: #cccccc;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar-section {
+            margin-bottom: 35px;
+        }
+
+        .sidebar-section h3 {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--navy-blue);
+            letter-spacing: 2px;
+            border-bottom: 2px solid var(--navy-blue);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .contact-list, .skills-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+
+        .contact-list .icon {
+            font-size: 14px;
+            width: 25px;
+            color: var(--navy-blue);
+        }
+
+        .skills-list li {
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .skills-list li::before {
+            content: "•";
+            color: var(--navy-blue);
+            font-size: 20px;
+            margin-right: 10px;
+            line-height: 10px;
+        }
+
+        /* --- COLONNE DROITE --- */
+        .main-content {
+            width: 65%;
+            padding: 40px 45px;
+        }
+
+        .timeline {
+            border-left: 1.5px solid var(--border-grey);
+            padding-left: 30px;
+            margin-left: 20px;
+        }
+
+        .timeline-section {
+            position: relative;
+            margin-bottom: 45px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .section-icon {
+            position: absolute;
+            left: -48px;
+            top: -5px;
+            width: 35px;
+            height: 35px;
+            background-color: var(--navy-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid white;
+            font-size: 15px;
+        }
+
+        .section-header h3 {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--navy-blue);
+            letter-spacing: 2px;
+        }
+
+        .profile-text {
+            font-size: 12px;
+            line-height: 1.6;
+            color: var(--text-grey);
+            text-align: justify;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -35.5px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border: 2px solid var(--navy-blue);
+            border-radius: 50%;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .item-title h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--navy-blue);
+        }
+
+        .item-title h5 {
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--text-grey);
+            margin-top: 2px;
+        }
+
+        .item-date {
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-grey);
+            text-transform: uppercase;
+        }
+
+        .hobby-list {
+            font-size: 11px;
+            color: var(--text-grey);
+            line-height: 1.6;
+        }
+
+    </style>
 </head>
 <body>
 
-    <div class="resume-container">
+    <div class="cv-container">
         
-        <aside class="sidebar">
-            <div class="profile-img-container">
-                <img src="IMG-20230131-WA0002.jpg" alt="Salif Modibo Keita" class="profile-img">
-            </div>
-
-            <div class="sidebar-section">
-                <h3>SKILLS</h3>
-                <div class="line"></div>
-                <ul>
-                    <li>Installation de Système d'exploitation (WINDOWS, LINUX)</li>
-                    <li>Installation de Serveur (WINDOWS SERVEUR)</li>
-                    <li>Capacité de cohésion au sein d'un groupe et Capacité d'Apprentissage</li>
-                    <li>Une Bonne Capacité Oratoire</li>
-                    <li>Une bonne Capacité de Créativité qui m'a permis de travailler dans le développement de site WEB avec de (HTML5, CSS, PHP, JAVASCRIPT)</li>
-                    <li>Compétences Basique en Développement WEB et création d'un réseau virtuel</li>
-                    <li>Maîtrise des SGBD (MYSQL, SQL SERVER)</li>
-                </ul>
-            </div>
-
-            <div class="sidebar-section">
-                <h3>LANGUAGES</h3>
-                <div class="line"></div>
-                <p>Français</p>
-                <p>Anglais (L2)</p>
-                <p>Bamanankan</p>
-            </div>
-
-            <div class="sidebar-section">
-                <h3>CONTACT</h3>
-                <div class="line"></div>
-                <p><strong>TEL :</strong> 75250430</p>
-                <p><strong>EMAIL :</strong> salifmodibok@gmail.com</p>
-            </div>
-        </aside>
-
-        <main class="main-content">
-            <header class="header-name">
+        <header class="header">
+            <div class="header-left"></div>
+            <div class="header-right">
                 <h1>SALIF MODIBO KEITA</h1>
-            </header>
+                <h2>INFORMATICIEN DE GESTION</h2>
+            </div>
+        </header>
 
-            <section class="content-section">
-                <div class="section-title">
-                    <i class="fas fa-user"></i>
-                    <h2>PROFIL INFO</h2>
-                    <div class="title-line"></div>
+        <div class="content-wrapper">
+            
+            <aside class="sidebar">
+                <div class="photo-container">
+                    <img src="../image/1000059750_1f557a910be26f660f01a18efd627884-15_07_2024 13_56_15.jpg" alt="Salif Modibo Keita">
                 </div>
-                <p>Maîtrise les bases de la programmation, des bases de données, et des réseaux, tout en acquérant des connaissances en finance, en gestion des ressources humaines, et en marketing.</p>
             </section>
 
-            <section class="content-section">
-                <div class="section-title">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h2>DIPLÔME</h2>
-                    <div class="title-line"></div>
+                <div class="sidebar-section">
+                    <h3>CONTACT</h3>
+                    <ul class="contact-list">
+                        <li><span class="icon">📞</span> 75250430</li>
+                        <li><span class="icon">✉</span> salifmodibok@gmail.com</li>
+                        <li><span class="icon">📍</span> Bamako, Mali</li>
+                    </ul>
                 </div>
-                
+
+                <div class="sidebar-section">
+                    <h3>COMPÉTENCES</h3>
+                    <ul class="skills-list">
+                        <li>Installation OS (Windows, Linux)</li>
+                        <li>Windows Serveur</li>
+                        <li>Web (HTML5, CSS, PHP, JS)</li>
+                        <li>MySQL & SQL Server</li>
+                        <li>Réseaux virtuels</li>
+                        <li>Aisance oratoire</li>
+                        <li>Créativité</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>LANGUES</h3>
+                    <ul class="skills-list">
+                        <li>Français (Excellent)</li>
+                        <li>Anglais (L2)</li>
+                        <li>Bamanankan</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="main-content">
                 <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="dot"></div>
-                        <div class="timeline-content">
-                            <p><strong>DIPLÔME D'ETUDE FONDAMENTALE | 2015 - 2016</strong></p>
-                            <p>Saint Kizito | Bamako</p>
+                    
+                    <div class="timeline-section">
+                        <div class="section-header">
+                            <div class="section-icon">👤</div>
+                            <h3>PROFIL INFO</h3>
                         </div>
+                        <p class="profile-text">
+                            Maîtrise les bases de la programmation, des bases de données et des réseaux, tout en acquérant des connaissances complémentaires en finance, en gestion des ressources humaines et en marketing. Orienté vers la cohésion d'équipe et l'apprentissage continu.
+                        </p>
                     </div>
-                    <div class="timeline-item">
-                        <div class="dot"></div>
-                        <div class="timeline-content">
-                            <p><strong>DIPLÔME DE BACCALAUREAT MALIEN | 2020 - 2021</strong></p>
-                            <p>Lycée Monseigneur Didier de Montclos | Sikasso</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="dot"></div>
-                        <div class="timeline-content">
-                            <p><strong>DIPLÔME DE LICENCE EN INFORMATIQUE DE GESTION | 2024 - 2025</strong></p>
-                            <p>IAM | Bamako</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="content-section">
-                <div class="section-title">
-                    <i class="fas fa-person-running"></i>
-                    <h2>HOBBIES</h2>
-                    <div class="title-line"></div>
+                    <div class="timeline-section">
+                        <div class="section-header">
+                            <div class="section-icon">🎓</div>
+                            <h3>DIPLÔMES & FORMATION</h3>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="item-header">
+                                <div class="item-title">
+                                    <h4>Licence en Informatique de Gestion</h4>
+                                    <h5>IAM Bamako</h5>
+                                </div>
+                                <div class="item-date">2024 - 2025</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="item-header">
+                                <div class="item-title">
+                                    <h4>Baccalauréat Malien</h4>
+                                    <h5>Lycée Monseigneur Didier de Montclos, Sikasso</h5>
+                                </div>
+                                <div class="item-date">2020 - 2021</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="item-header">
+                                <div class="item-title">
+                                    <h4>Diplôme d'Études Fondamentales (DEF)</h4>
+                                    <h5>École Saint Kizito, Bamako</h5>
+                                </div>
+                                <div class="item-date">2015 - 2016</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-section">
+                        <div class="section-header">
+                            <div class="section-icon">🎯</div>
+                            <h3>CENTRES D'INTÉRÊT</h3>
+                        </div>
+                        <div class="hobby-list">
+                            Événements culturels, randonnée sportive, lecture et jeux vidéo.
+                        </div>
+                    </div>
+
                 </div>
-                <ul class="hobbies-list">
-                    <li>Événements culturels</li>
-                    <li>Randonnée Sport</li>
-                    <li>Lecture Jeux</li>
-                    <li>Vidéos</li>
-                </ul>
-            </section>
-        </main>
+            </main>
+
+        </div>
     </div>
 
 </body>
