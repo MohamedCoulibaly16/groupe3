@@ -240,7 +240,8 @@
     /* cacher les éléments inutiles */
     .telecharger,
     .retour,
-    .message {
+    .message,
+    .retour_a_enlever {
         display: none !important;
     }
 
