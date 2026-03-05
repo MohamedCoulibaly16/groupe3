@@ -27,23 +27,38 @@ styles.textContent = `
 
 document.body.appendChild(toast);
 document.body.appendChild(styles)
+pdfModule = document.createElement('script')
+pdfModule.src = "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+document.body.appendChild(pdfModule)
 
-function downloadPDF(element) {
-    let documentName = element.dataset.documentname;
-    const link = document.createElement("a")
-    link.href = "../cv/PDF/" + documentName
-    link.download = "CV-Ayouba-MORBA.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-    toast.style.top = "30px"
+function downloadPDF() {
+  console.log("fonction appelée")
+  const element = document.getElementById("content");
 
-    setTimeout(() => {
-        toast.style.top = "-80px"
-    }, 3500)
+  const opt = {
+    margin: 20,
+    filename: "page.pdf",
+    image: { type: "jpeg", quality: 0.98 },
+    html2canvas: {
+      scale: 2,
+    },
+    jsPDF: {
+      unit: "mm",
+      format: "a4",
+      orientation: "portrait"
+    }
+  };
+
+  html2pdf().set(opt).from(element).save();
+
+  toast.style.top = "30px"
+
+  setTimeout(() => {
+    toast.style.top = "-80px"
+  }, 2000)
 }
 
-// const message = document.getElementById("message");
+const message = document.getElementById("message");
 
 // function showMessage() {
 //   message.classList.add("show");

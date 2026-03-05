@@ -8,6 +8,7 @@
 
 body {
   font-family: var(--font-main);
+
 }
 
 .telecharger {
@@ -23,6 +24,7 @@ body {
   right: 5%;
   font-size: 1em;
 }
+
 .telecharger:hover {
   background-color: var(--secondary-color);
   transition-duration: 200ms;
@@ -58,10 +60,12 @@ body {
 
 .container_telechargement {
   display: flex;
+
   justify-content: space-around;
   padding: 20px;
   align-items: center;
 }
+
 .retourMain {
   display: flex;
   align-items: center;
