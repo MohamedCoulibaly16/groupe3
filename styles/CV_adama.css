@@ -1,11 +1,23 @@
 
+ @import url('main.css'); 
+
+ .cv {
+    background-color: white;
+    width: 900px;
+    height: 1150px;
+    margin: 15px auto;
+    /* padding: 20px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
 
 .header{
     background-color: #183684;
-    /* width: 100%; */
+    width: 900px;
     height: 200px;
-    margin-right: 5%;
-    margin-left: 5%;
+    /* margin-right: 5%;
+    margin-left: 5%; */
     color: white;
     text-align: right;
 
@@ -32,18 +44,18 @@
     font-size: 40px;
 }
  .paragraph {
-  font-family: inter;
+  font-family: 'Inter', sans-serif;  
   font-weight: bold;
   font-style:normal;
-  font-size: 20;
+  font-size: 20px;
 } 
 
 .profil{
     background-color: #C9C9C9;
     width: 300px;
     height: 100%;
-     margin-left: 10%;
-     margin-top: -13%;
+     margin-left: 5%;
+     margin-top: -20%;
      padding: 2%;
      border-top-right-radius: 200px;
      border-top-left-radius: 200px;
@@ -102,11 +114,11 @@ img{
 }
 
 .sect p{
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
 }
 
  ul li{
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -142,13 +154,30 @@ img{
     gap: 10px;
 }
 
-
 .retour_telecharger{
     display: flex;
     justify-content: space-between;
-    margin-top: 45px;
-    margin-right: 5%;
+    margin-top: 20px;
+    margin-right: 20px;
 }
+
+
+/* .telecharger{
+    background-color: #183684;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    pos
+       
+} 
+
+.telecharger:hover {
+      background-color:#19B9D4 ;
+       
+    } */
+
 
  /* .tiret::before{
     content: "eeeeee";
