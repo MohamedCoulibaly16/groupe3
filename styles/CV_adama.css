@@ -5,11 +5,12 @@
     background-color: white;
     width: 900px;
     height: 1150px;
-    margin: 20px auto;
+    margin: 15px auto;
     /* padding: 20px; */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
  }
+ 
 
 .header{
     background-color: #183684;
@@ -43,7 +44,7 @@
     font-size: 40px;
 }
  .paragraph {
-  font-family: inter;
+  font-family: 'Inter', sans-serif;  
   font-weight: bold;
   font-style:normal;
   font-size: 20px;
@@ -113,11 +114,11 @@ img{
 }
 
 .sect p{
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
 }
 
  ul li{
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
 }
 
 
