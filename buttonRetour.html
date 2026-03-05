@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Bouton de retour et téléchargement du CV doit être tout en haut de votre cv -->
+     <!-- Et si vous voulez vous pouvez ajouter le code css dans ce fichier css ou les comme ça dans la meme page -->
+    <div class="container_tele">
+            <div class="retour">
+                <h3><i class="fa-solid fa-arrow-left"></i> <a href="../index.html">Retour</a></h3>
+            </div>
+            <div>
+                <button type="button" class="telecharger" onclick=""><i class="fa-solid fa-download"></i> Télécharger le CV</button>
+            </div>
+        </div>
+
+        <style>
+            .container_tele{
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+            }
+            .retour {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                color: var(--primary-color);
+            }
+
+            i{
+                padding: 8px;
+            }
+        </style>
+</body>
+</html>
