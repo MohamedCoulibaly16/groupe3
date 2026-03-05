@@ -8,7 +8,6 @@
 
 body {
   font-family: var(--font-main);
-
 }
 
 .telecharger {
@@ -20,7 +19,7 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  bottom: 20px;
+  bottom: 20px; 
   right: 5%;
   font-size: 1em;
 }
