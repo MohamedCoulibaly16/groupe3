@@ -19,9 +19,13 @@
         </h3>
       </div>
       <div>
-        <button type="button" class="telecharger" onclick="window.print()">
+        <!-- <button type="button" class="telecharger" onclick="window.print()">
           <i class="fa-solid fa-download"></i> Télécharger le CV
-        </button>
+        </button> -->
+        <button type="button" class="telecharger" data-docpath="../cv/PDF/cv_Mohamed.pdf"
+                onclick="downloadPDF(this,`cv_Mohamed`)">
+                <i class="fa-solid fa-download"></i> Télécharger le CV
+            </button>
       </div>
     </div>
     <div class="message" id="message">
