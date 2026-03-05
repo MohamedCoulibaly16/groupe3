@@ -13,13 +13,13 @@
   <body>
     <div class="container_telechargement">
       <div class="retourMain">
-        <h3>
+        <h3 class="retour_a_enlever">
           <i class="fa-solid fa-arrow-left"></i>
           <a href="../index.html">Retour</a>
         </h3>
       </div>
       <div>
-        <button type="button" class="telecharger" onclick="">
+        <button type="button" class="telecharger" onclick="window.print()">
           <i class="fa-solid fa-download"></i> Télécharger le CV
         </button>
       </div>
@@ -36,7 +36,7 @@
         </div>
       </header>
     </div>
-    <div class="cv">
+    <div class="cv" id="cv">
       <!-- COLONNE GAUCHE -->
       <aside class="left">
         <section>
@@ -133,8 +133,6 @@
       </main>
     </div>
 
-    <!-- Bouton de retour -->
-
-    <!-- Fin du bloc de code -->
+   <script src="../js/script.js"></script>
   </body>
 </html>
