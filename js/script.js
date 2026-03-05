@@ -32,24 +32,7 @@ pdfModule.src = "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2
 document.body.appendChild(pdfModule)
 
 function downloadPDF() {
-  console.log("fonction appelée")
-  const element = document.getElementById("content");
-
-  const opt = {
-    margin: 20,
-    filename: "page.pdf",
-    image: { type: "jpeg", quality: 0.98 },
-    html2canvas: {
-      scale: 2,
-    },
-    jsPDF: {
-      unit: "mm",
-      format: "a4",
-      orientation: "portrait"
-    }
-  };
-
-  html2pdf().set(opt).from(element).save();
+  window.print()
 
   toast.style.top = "30px"
 

@@ -313,3 +313,9 @@ body {
 #content {
     background-color: rgb(243, 243, 243);
 }
+
+@media print {
+    .no-print {
+        display: none;
+    }
+}
