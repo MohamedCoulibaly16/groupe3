@@ -15,13 +15,27 @@ body {
   right: 40px;
   bottom: 40px;
 
-  padding: 12px 25px;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
+ .telecharger {
+        display: relative;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        bottom: 20px;
+        right: 5%;
+        font-size: 1em;
+        
+    }
+    .telecharger:hover {
+        background-color: var(--secondary-color);
+        transition-duration: 200ms;
+        transform: translateY(-10px);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.488);
+        
+    }
 
   z-index: 1000;
 }
