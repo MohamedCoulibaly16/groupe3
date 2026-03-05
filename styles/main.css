@@ -19,10 +19,11 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  bottom: 20px;
-  right: 60px;
+  bottom: 20px; 
+  right: 5%;
   font-size: 1em;
 }
+
 .telecharger:hover {
   background-color: var(--secondary-color);
   transition-duration: 200ms;
@@ -35,6 +36,7 @@ body {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
+
   background-color: #2da44e;
   color: white;
   padding: 15px 25px;
@@ -57,10 +59,12 @@ body {
 
 .container_telechargement {
   display: flex;
+
   justify-content: space-around;
   padding: 20px;
   align-items: center;
 }
+
 .retourMain {
   display: flex;
   align-items: center;
@@ -71,4 +75,10 @@ body {
 
 i {
   padding: 8px;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
 }

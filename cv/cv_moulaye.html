@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="../styles/cv_moulaye.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="../styles/main.css">
-	<title>Document</title>
+	<title>Moulaye Amadou Dagnon</title>
 </head>
 
 <body>
@@ -16,7 +16,9 @@
 			<h3><i class="fa-solid fa-arrow-left"></i> <a href="../index.html">Retour</a></h3>
 		</div>
 		<div>
-			<button type="button" class="telecharger" onclick=""><i class="fa-solid fa-download"></i> Télécharger le
+			<button type="button" class="telecharger" data-docpath="../cv/PDF/Moulaye Amadou Dagnon.pdf"
+				onclick="downloadPDF(this,`CV Moulaye Amadou Dagnon`)"><i class="fa-solid fa-download"></i> Télécharger
+				le
 				CV</button>
 		</div>
 	</div>
@@ -103,8 +105,9 @@
 
 
 
+	<script src="../js/script.js"></script>
 
-	<script>
+	<!-- <script>
 		document.querySelector(".telecharger").addEventListener("click", () => {
 			const htmlContent = document.querySelector(".cv_moulaye_container").innerHTML;
 
@@ -117,7 +120,7 @@
 			a.click();
 			URL.revokeObjectURL(url);
 		});
-	</script>
+	</script> -->
 </body>
 
 </html>
