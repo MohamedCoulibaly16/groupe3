@@ -57,3 +57,21 @@ body {
     opacity: 1;
     top: 40px;
 }
+
+ .container_telechargement{
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+                align-items: center;
+            }
+            .retourMain {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                color: var(--primary-color);
+            }
+
+            i{
+                padding: 8px;
+            }
