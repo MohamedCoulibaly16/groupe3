@@ -7,24 +7,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles/cv_ibe.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
-    <header>
-    </header>
-    <main class="main-cv" >
-        <div class="container_tele">
-            <div class="retour">
+    <main class="main-cv">
+        <div class="container_telechargement ">
+            <div class="retourMain">
                 <h3><i class="fa-solid fa-arrow-left"></i> <a href="../index.html">Retour</a></h3>
             </div>
             <div class="no-print">
-                <button type="button" class="telecharger" onclick="printCV()"><i class="fa-solid fa-download"></i> Télécharger le CV</button>
+                <button type="button" class="telecharger" data-docpath="../cv/PDF/CV_IBE.pdf" 
+                onclick="downloadPDF(this,`CV Ibrahima Soly Coulibaly`)">
+                <i class="fa-solid fa-download"></i> Télécharger le CV</button>
             </div>
         </div>
         <section id="cv" class="cv-container" >
         <div class="personal-info">
             <h1 class="nom">Ibrahima Soly Coulibaly</h1>
-            <h2 class="pro">Software Engineer</h2>
+            <h2 class="pro">Informaticien</h2>
         </div>
         <div class="cv-content">
             <div class="info">
@@ -61,7 +60,6 @@
             <div class="info-detail">
                 <div class="detail">
                     <div>
-                        <i></i>
                         <div class="divider-profile">
                         </div>
                     </div>
@@ -149,9 +147,9 @@
                </div>
             </div>
         </div>
-        <script>
+        <!-- <script>
             function printCV() {
-                   let win =window.print();
+                    window.print();
                     const toast = document.createElement('div');
                     toast.className = 'toast';
                     toast.textContent = 'CV téléchargé avec succès !';
@@ -160,14 +158,10 @@
                         toast.remove();
                     }, 3000);
                 }
-        </script>
+        </script> -->
     </section>
     </main>
-    <footer>
-    </footer>
-
-    <a href="../index.html">
-    </a>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

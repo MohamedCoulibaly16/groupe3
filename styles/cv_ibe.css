@@ -2,6 +2,7 @@
     --bleu-saphir-fonce: #183684;
     --turquoise-vif: #19B9D4;
     --gris-clair: #C9C9C9;
+    
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -38,7 +39,7 @@ li{
 }
 .cv-content {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 35% 65%      ;
 }
 .info{
     background-color: #182a5a;
@@ -176,7 +177,7 @@ i{
 }
 @media screen and (max-width: 768px) {
     p{
-        font-size: 12px;
+        font-size: 11px;
     }
     li{
         font-size: 12px;
@@ -207,7 +208,6 @@ i{
     
     .cv-container {
         max-width: 100%;
-        margin: 10px;
         padding: 0;
     }
 
