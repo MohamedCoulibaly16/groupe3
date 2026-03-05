@@ -77,3 +77,9 @@ body {
 i {
   padding: 8px;
 }
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
