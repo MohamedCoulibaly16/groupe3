@@ -35,7 +35,7 @@ background-color: aliceblue;
     height: 160px;
     padding: 30px;
     margin-top: -20px;
-    margin right: 20px;
+    margin-right: 20px;
     flex-shrink: 0;
 
     }
@@ -47,9 +47,7 @@ body {
     background: #eaeaea;
     box-sizing: border-box;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 
 
 }
