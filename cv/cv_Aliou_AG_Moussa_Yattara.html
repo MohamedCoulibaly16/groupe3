@@ -17,8 +17,11 @@
                 <h3><i class="fa-solid fa-arrow-left"></i> <a href="../index.html">Retour</a></h3>
             </div>
             <div>
-                <button type="button" class="telecharger" id="telechargerYate"><i class="fa-solid fa-download"></i> Télécharger le CV</button>
-            </div>
+            <button type="button" class="telecharger" data-docpath="../cv/PDF/cv-yatt-aliou.pdf"
+                onclick="downloadPDF(this,`CV Aliou AG Moussa Yattara`)">
+                <i class="fa-solid fa-download"></i> Télécharger le CV
+            </button>
+        </div>
         </div>
       <header class="header-teal">
        
@@ -157,18 +160,15 @@
       </main>
       </div>
     </div>  
-            <script>
-              document.getElementById("telechargerYate").addEventListener("click", function(){
-                window.print();
-              });
-            </script>    
-          </div>
+              
+          
           
 
            <!-- Bouton de retour -->
 
    
 
-    <!-- Fin du bloc de code -->
+ <script src="../js/script.js"></script>
+
   </body>
 </html>
