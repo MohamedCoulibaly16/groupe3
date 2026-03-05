@@ -277,7 +277,6 @@ body {
     }
 
     ul {
-      padding-left: 0.05rem;
       li {
         transform: translateX(-14px);
         margin-bottom: 0.2rem;
@@ -320,6 +319,9 @@ body {
         }
       }
       article#Experience {
+        .ex-role {
+          font-size: 0.8rem;
+        }
         .experience-item {
           padding: 0 15px;
           font-size: 0.5rem;

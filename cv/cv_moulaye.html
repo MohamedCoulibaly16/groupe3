@@ -5,27 +5,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../styles/cv_moulaye.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="../styles/main.css">
 	<title>Document</title>
 </head>
 
-<body >
-	<div class="cl-btn">
-		<a href="../index.html">
-			<div class="retour">
-
-				<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-					<g id="SVGRepo_iconCarrier">
-						<path d="M15 20L7 12L15 4" stroke="#000000" stroke-width="2" stroke-linecap="round"
-							stroke-linejoin="round"></path>
-					</g>
-				</svg>
-				<h3>Retour</h3>
-			</div>
-		</a>
-		<button id="download">Télécharger</button>
+<body>
+	<div class="container_telechargement">
+		<div class="retourMain">
+			<h3><i class="fa-solid fa-arrow-left"></i> <a href="../index.html">Retour</a></h3>
+		</div>
+		<div>
+			<button type="button" class="telecharger" onclick=""><i class="fa-solid fa-download"></i> Télécharger le
+				CV</button>
+		</div>
 	</div>
 
 	<div class="cv_moulaye_container">
@@ -42,9 +35,9 @@
 				<article id="coordonnees">
 					<h2>Coordonnées</h2>
 					<ul>
-						<li> <img src="../image/phone.png" alt=""> <span>74 34 69 63</span> </li>
-						<li> <img src="../image/email.png" alt=""> <span>moulayedagnon@mail.com</span> </li>
-						<li> <img src="../image/map.png" alt=""> <span>kalaban-coura</span> </li>
+						<li> <img src="../images/phone.png" alt=""> <span>74 34 69 63</span> </li>
+						<li> <img src="../images/email.png" alt=""> <span>moulayedagnon@mail.com</span> </li>
+						<li> <img src="../images/map.png" alt=""> <span>kalaban-coura</span> </li>
 					</ul>
 				</article>
 				<article id="competences">
@@ -107,62 +100,24 @@
 			</section>
 		</div>
 	</div>
-	  <button class="telecharger" onclick="showMessage()">Télécharger le CV</button>
 
-	  <!-- Bouton de retour -->
 
-    <a href="../index.html">
-        <div class="retour">
 
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <path d="M15 20L7 12L15 4" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                </g>
-            </svg>
-            <h3>Retour</h1>
-        </div>
-    </a>
-    <style>
-        .retour {
-            top: 30px;
-            left: 50px;
-            position: fixed;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            padding: 4px 15px;
-            border-radius: 20px;
-            border: 2px solid var(--primary-color);
-            color: var(--primary-color);
-            transition-duration: 200ms;
 
-            svg {
-                height: 30px;
-                width: 100%;
-                fill: none;
+	<script>
+		document.querySelector(".telecharger").addEventListener("click", () => {
+			const htmlContent = document.querySelector(".cv_moulaye_container").innerHTML;
 
-                path {
-                    stroke: var(--primary-color);
-                }
-            }
-        }
+			const blob = new Blob([htmlContent], { type: "text/html" });
 
-        .retour:hover {
-            background-color: var(--primary-color);
-            color: white;
-            transition-duration: 200ms;
-
-            path {
-                stroke: white;
-            }
-        }
-    </style>
-
-    <!-- Fin du bloc de code -->
+			const url = URL.createObjectURL(blob);
+			const a = document.createElement("a");
+			a.href = url;
+			a.download = "moulayedagnon.html";
+			a.click();
+			URL.revokeObjectURL(url);
+		});
+	</script>
 </body>
 
 </html>
