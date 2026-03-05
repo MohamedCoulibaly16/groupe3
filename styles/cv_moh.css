@@ -1,4 +1,4 @@
- /* @include "main.css"; */
+
  @import url('main.css');
  /* Les couleurs de base */
 
@@ -157,6 +157,7 @@
         margin-top: 1em;
         padding: 0.5em;
     }
+
    
 
     .message {
@@ -245,4 +246,48 @@ body {
 
 }
 
-}
+}   
+
+
+    /************** Mohamed Coulibaly style ****************/
+
+    /* message de confirmation */
+    /* .message{
+        
+        border: 1px solid green;
+        width: 20vw;
+        margin: auto;
+        background-color: #2da44e6e;
+        padding: 20px;
+        border-radius: 10px;
+        position: static;
+        top: 20px;
+        right: 40vw;
+        
+        
+
+    } */
+
+    /* .telecharger {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: var(--blanc);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 60px;
+        font-size: 1em;
+    }
+    .telecharger:hover {
+        background-color: var(--secondary-color);
+        transition-duration: 200ms;
+        transform: translateY(-10px);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.488);
+        
+    } */
+
+   
