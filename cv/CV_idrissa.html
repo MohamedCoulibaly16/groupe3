@@ -12,9 +12,13 @@
             <div class="retourMain" id="ret">
                 <h3><i class="fa-solid fa-arrow-left" ></i> <a href="../index.html">Retour</a></h3>
             </div>
-            <div>
-                <button type="button" class="telecharger"  id="butt"><i class="fa-solid fa-download"></i> Télécharger le CV</button>
-            </div>
+            
+              <div>
+            <button type="button" class="telecharger" data-docpath="../cv/PDF/idriss.pdf"
+                onclick="downloadPDF(this,`IDRISSA`)">
+                <i class="fa-solid fa-download"></i> Télécharger le CV
+            </button>
+        </div>
         </div>
 <div class="container">
     <div class="left">
@@ -69,7 +73,7 @@
     <div class="right">
     <div class="beid">
         <div class="header">
-            <h1>BERTHE<span>IDRISSA</span></h1>
+          <h1>BERTHE  IDRISSA</h1>
             <h3>ANNALYSE PROGRAMMEUR</h3>
         </div>
 </div>
@@ -128,6 +132,7 @@ document.getElementById("butt").addEventListener("click", function(){
 });
 </script>
     </div>
- 
+     <script src="../js/script.js"></script>
+
 </body>
 </html>
