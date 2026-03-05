@@ -1,7 +1,27 @@
  @import url('main.css');
 html{background-color: azure;
-    margin: 0 15% 0 15%;      
 }
+/* Mobile-first : par défaut pas de marge */
+body, .container-fluid, main, header {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Desktop >=768px : marge autour du contenu */
+@media (min-width: 768px) {
+    html {
+        margin-left: 200px !important;
+        margin-right: 200px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .container-fluid p {
+        font-size: 12px;
+    }
+}
+
 
 header {
     display: flex;               /* active Flexbox */
@@ -43,6 +63,16 @@ header h1 {
     opacity: 1;
     border-radius: 25px;
     
+}
+.trait {
+     width: 50%;              /* longueur */
+    height: 15px             /* épaisseur */
+   background-color: black; /* couleur */
+    border: none;            /* enlève le style par défaut */
+    margin: 10px auto;       /* espace + centrage */
+    opacity: 1;
+    border-radius: 25px;
+   
 }
 
 .languestop {
@@ -121,3 +151,17 @@ header h1 {
             }
         }
 
+html, body {
+    overflow-x: hidden; /* empêche le scroll horizontal */
+}
+
+.container, .container-fluid {
+    max-width: 100%;   /* jamais dépasser la largeur de l’écran */
+    padding-left: 0;   /* ajustable selon les breakpoints */
+    padding-right: 0;
+}
+
+.row {
+    margin-left: 0;    /* supprime les marges négatives par défaut de Bootstrap */
+    margin-right: 0;
+}
