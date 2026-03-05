@@ -1,4 +1,11 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ /* @include "main.css"; */
+>>>>>>> cb6529f5d2d934441aa80ae8392bb41fa29bb30c
+=======
 
+>>>>>>> a29f709bed99e20c6dcc709002018a18dc8f1dc1
  @import url('main.css');
  /* Les couleurs de base */
 
@@ -157,6 +164,9 @@
         margin-top: 1em;
         padding: 0.5em;
     }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
    
 
@@ -165,6 +175,7 @@
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
+>>>>>>> a29f709bed99e20c6dcc709002018a18dc8f1dc1
     
     background-color: #2da44e;
     color: white;
@@ -179,6 +190,57 @@
      z-index: 9999;
 }
 
+<<<<<<< HEAD
+
+    /************** Mohamed Coulibaly style ****************/
+
+    /* message de confirmation */
+    /* .message{
+        
+        border: 1px solid green;
+        width: 20vw;
+        margin: auto;
+        background-color: #2da44e6e;
+        padding: 20px;
+        border-radius: 10px;
+        position: static;
+        top: 20px;
+        right: 40vw;
+        
+        
+
+    } */
+=======
+   
+>>>>>>> cb6529f5d2d934441aa80ae8392bb41fa29bb30c
+
+    /* .telecharger {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: var(--blanc);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 60px;
+        font-size: 1em;
+    }
+    .telecharger:hover {
+        background-color: var(--secondary-color);
+        transition-duration: 200ms;
+        transform: translateY(-10px);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.488);
+        
+    } */
+
+<<<<<<< HEAD
+   
+=======
+=======
+>>>>>>> a29f709bed99e20c6dcc709002018a18dc8f1dc1
 .message.show {
     opacity: 1;
     top: 40px;
@@ -246,6 +308,10 @@ body {
 
 }
 
+<<<<<<< HEAD
+}
+>>>>>>> cb6529f5d2d934441aa80ae8392bb41fa29bb30c
+=======
 }   
 
 
@@ -291,3 +357,4 @@ body {
     } */
 
    
+>>>>>>> a29f709bed99e20c6dcc709002018a18dc8f1dc1

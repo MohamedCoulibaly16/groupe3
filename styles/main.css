@@ -1,9 +1,17 @@
 :root {
+<<<<<<< HEAD
+    --primary-color: #183684;
+    --secondary-color: #19B9D4;
+    --tertiary-color: #C9C9C9;
+    --font-main: 'Inter', sans-serif;
+    --blanc: #f30707;
+=======
   --primary-color: #183684;
   --secondary-color: #19b9d4;
   --tertiary-color: #c9c9c9;
   --font-main: "Inter", sans-serif;
   --blanc: #fff;
+>>>>>>> origin/main
 }
 
 body {
