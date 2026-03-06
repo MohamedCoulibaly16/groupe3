@@ -17,7 +17,7 @@ body, .container-fluid, main, header {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-    .container-fluid p {
+    .container-fluid p{
         font-size: 12px;
     }
 }
@@ -38,14 +38,14 @@ header {
     height: 200px;
     width: 200px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0;
+    left: 0;
     right: 20px;
     border-radius: 50%; /* rond si tu veux */}
 
 /* Titre */
 header h1 {
-    margin: 0 20px;
+    margin: 0;
     font-size: 40px;
     color: white;
     flex-grow: 1;          /* occupe l’espace disponible */
@@ -55,9 +55,9 @@ header h1 {
 
 
 .mon-trait {
-    width: 50%;              /* longueur */
-    height: 1%;             /* épaisseur */
-    background-color:#0A3D62; /* couleur */
+    width: 75%;              /* longueur */
+    height: 3px;             /* épaisseur */
+    background-color: black; /* couleur */
     border: none;            /* enlève le style par défaut */
     margin: 10px auto;       /* espace + centrage */
     opacity: 1;
