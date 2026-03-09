@@ -20,9 +20,12 @@ body, .container-fluid, main, header {
     .container-fluid p{
         font-size: 12px;
     }
+    body {
+        font-size: 0.5;
+    }
 }
 
-
+.container-fluid{display: flex;}
 header {
     display: flex;               /* active Flexbox */
     align-items: center;         /* centre verticalement */
@@ -64,17 +67,16 @@ header h1 {
     border-radius: 25px;
     
 }
-.trait {
-     width: 50%;              /* longueur */
-    height: 15px             /* épaisseur */
-   background-color: black; /* couleur */
+.mon-trait2 {
+    width: 75%;              /* longueur */
+    height: 3px;             /* épaisseur */
+    background-color: rgb(247, 9, 9); /* couleur */
     border: none;            /* enlève le style par défaut */
     margin: 10px auto;       /* espace + centrage */
     opacity: 1;
     border-radius: 25px;
-   
+    
 }
-
 .languestop {
     display: flex;
     list-style:none;
