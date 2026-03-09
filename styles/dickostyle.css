@@ -7,10 +7,11 @@
 body {
     font-family: 'Lora', poppins;
     margin: 0;
+    background-color: rgb(235, 247, 245);
     
 }
 .cv-container {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     align-items: center;
     background-color: #fff;
@@ -21,7 +22,7 @@ body {
     display: flex;
     padding-left: 280px;
     flex-direction: column;
-    background-color: var(--bleu-saphir-fonce);
+    background-color: #79a3e2;
     color: #fff;
     padding-bottom: 30px;
     h1{
@@ -41,21 +42,21 @@ li{
     display: grid;
     grid-template-columns: 35% 65%      ;
 }
-.info{
+.photo{
     background-color: #182a5a;
     color: #fff;
-    padding: 10px;
+    padding: 0;
     /* push content down so profile image doesn't overlap */
     padding-top: 100px;
 }
 .profile-image {
     position: absolute;
-    padding: 4%;
-    top: 130px;
-    width: 150px;
-    height: 150px;
+    padding: 2%;
+    top: 17%;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    object-fit: cover;
+   
     
 }
 .info-detail {
@@ -85,6 +86,12 @@ li{
         font-size: large;
     }
 }
+hr {
+  border: none;
+  height: 2px;
+
+    background-color: black;
+}
 
 .divider-profile {
     position: relative;
@@ -93,6 +100,7 @@ li{
     background-color: var(--bleu-saphir-fonce);
     
 }
+
 .divider-profile::before {
     content: "";
     position: absolute;
@@ -226,7 +234,7 @@ i{
         
     }
 
-    .info{
+    .photo{
     background-color: #182a5a;
     color: #fff;
     padding: 15px;
@@ -321,24 +329,3 @@ i{
     @keyframes toast-in {
         to { opacity: 1; transform: translateY(0); }
     }
-
-@media print {
-    body{
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-    }
-
-    .telecharger {
-        display: none;
-    }
-
-    .no-print {
-    display: none;
-  }
-
-    .retour {
-        display: none;
-    }
-
-    .toast { display: none !important; }
-}
