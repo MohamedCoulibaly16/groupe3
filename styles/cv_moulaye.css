@@ -243,7 +243,6 @@ body {
       position: static;
       width: 100%;
       background-color: var(--primary-color);
-      z-index: 1;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       padding-left: 0;
