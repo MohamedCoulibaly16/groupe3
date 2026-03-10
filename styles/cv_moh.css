@@ -261,7 +261,7 @@ body {
 }   
 
 
-/* 
+
 .photo img{
     animation: floatPhoto 4s ease-in-out infinite;
 }
@@ -298,4 +298,4 @@ body {
 .left li:hover {
     transform: translateX(5px);
     transition: 0.2s;
-} */
+}
