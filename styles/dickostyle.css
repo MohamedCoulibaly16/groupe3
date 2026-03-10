@@ -8,6 +8,7 @@ body {
     font-family: 'Lora', poppins;
     margin: 0;
     background-color: rgb(235, 247, 245);
+    margin: 0 25% 0 25%;
     
 }
 .cv-container {
@@ -52,15 +53,15 @@ li{
 .profile-image {
     position: absolute;
     padding: 2%;
-    top: 17%;
-    width: 200px;
-    height: 200px;
+    top: 25%;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
    
     
 }
 .info-detail {
-    padding: 15px;
+    padding: 5px;
     background: white;
 }
 
@@ -99,6 +100,10 @@ hr {
     height: 200px;
     background-color: var(--bleu-saphir-fonce);
     
+}
+.proff p{
+    /* border: black 2px solid; */
+    width: 80%;
 }
 
 .divider-profile::before {
