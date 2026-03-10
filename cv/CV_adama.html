@@ -24,9 +24,13 @@
                 <h3><i class="fa-solid fa-arrow-left"></i> <a href="../index.html">Retour</a></h3>
             </div>
             <div class="download">
-            <a href="../images/" download="CV_Adama.pdf">
+              <button type="button" class="telecharger" data-docpath="../cv/PDF/CV_Adama.pdf"
+                onclick="downloadPDF(this,`CV Adama Diarra`)">
+                <i class="fa-solid fa-download"></i> Télécharger le CV
+            </button>
+            <!-- <a href="../images/CV_Adama.pdf" download="CV_Adama.pdf">
                <button class="telecharger"><i class="fa-solid fa-download"></i>Télécharger le CV</button>
-            </a>       
+            </a>        -->
           </div>
     </div>
   <div class="cv">
@@ -233,6 +237,7 @@
     </style> -->
 
     <!-- Fin du bloc de code -->
+     <script src="../js/script.js"></script>
 </body>
 
 </html>

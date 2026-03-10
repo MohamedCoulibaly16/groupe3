@@ -15,12 +15,11 @@
         body {
             background-color: #525659;
             font-family: 'Montserrat', sans-serif;
-            display: flex;
-            justify-content: center;
             padding: 40px;
         }
 
         .cv-container {
+            margin: 0 auto;
             width: 210mm;
             height: 297mm;
             background-color: #ffffff;
