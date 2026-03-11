@@ -12,7 +12,7 @@ body {
     
 }
 .cv-container {
-    max-width: 80%;
+    max-width: 65%;
     margin: 0 auto;
     align-items: center;
     background-color: #fff;
@@ -76,11 +76,11 @@ li{
     }
 }
 .education {
-    width: 80%;
+    width: 100%;
     .education-item {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         
     }
     h3{
@@ -101,10 +101,7 @@ hr {
     background-color: var(--bleu-saphir-fonce);
     
 }
-.proff p{
-    /* border: black 2px solid; */
-    width: 80%;
-}
+
 
 .divider-profile::before {
     content: "";
@@ -167,7 +164,7 @@ hr {
 
 .profil-h2{
     position: relative;
-    width: 500px;
+    width: 100%;
     height: 2px;
     background-color: var(--bleu-saphir-fonce);
 }
