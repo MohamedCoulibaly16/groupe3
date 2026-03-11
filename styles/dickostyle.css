@@ -12,7 +12,7 @@ body {
     
 }
 .cv-container {
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     align-items: center;
     background-color: #fff;
@@ -76,7 +76,7 @@ li{
     }
 }
 .education {
-    width: 100%;
+    width: 80%;
     .education-item {
         display: flex;
         flex-direction: row;
