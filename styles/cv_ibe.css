@@ -164,13 +164,7 @@ li{
     justify-content: space-around;
     padding: 20px;
 }
-.retour {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    color: var(--primary-color);
-}
+
 
 i{
     padding: 8px;
