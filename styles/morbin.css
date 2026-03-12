@@ -151,13 +151,14 @@ body {
     display: flex;
 
 
+
     figure {
         position: absolute;
         left: -150px;
     }
 
     section {
-        background-color: var(--primary-color);
+        background-color: var(--new-color);
         padding-left: 70px;
         padding-right: 50px;
         border-top-left-radius: 10px;

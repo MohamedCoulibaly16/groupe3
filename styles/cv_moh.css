@@ -108,6 +108,7 @@
         width: 60%;
         /* padding: 0.5em; */
         background-color: white;
+        /* display: flex; */
     }
     /* .right h2 {
         border-bottom: 1px solid #000;
@@ -159,6 +160,52 @@
     .interet p{
         margin-top: 1em;
         padding: 0.5em;
+    }
+
+    .ligne-verticale{
+        background-color: #000;
+        width: 2px;
+        height: 15%;
+        position: absolute;
+        margin: 5rem 2rem 0;
+        top: 19rem;
+    }
+
+    #profile-icon{
+        position: absolute;
+        /* border: 1px solid black; */
+        top: .5rem;
+        left: 1rem;
+    }
+
+    .ligne-formation{
+        background-color: #000;
+        width: 2px;
+        height: 50%;
+        position: absolute;
+        margin: 18rem 2rem 0;
+        top: 19rem;
+    }
+    #formation-icon{
+        position: absolute;
+        /* border: 1px solid black; */
+        top: .5rem;
+        left: 1rem;
+    }
+    .ligne-interet{
+        background-color: #000;
+        width: 2px;
+        height: 15%;
+        position: absolute;
+        margin: 28rem 2rem 0;
+        top: 35rem;
+        /* left: 0; */
+    }
+    #interet-icon{
+        position: absolute;
+        /* border: 1px solid black; */
+        top: .5rem;
+        left: 1rem;
     }
 
 
