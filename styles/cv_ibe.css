@@ -63,6 +63,8 @@ li{
     background: white;
 }
 
+
+
 .experience {
     .experience-item {
         display: flex;
@@ -139,7 +141,7 @@ li{
 .divider-education::before {
     content: "";
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: -5px;
     width: 10px;
     height: 10px;
@@ -188,11 +190,16 @@ i{
     i{
         padding: 0;
     }
-
+.divider{
+    margin-top: 0px;
+}
     .education {
     width: 90%;
     
    
+}
+.detail {
+    gap: 0;
 }
 
     .personal-info {
@@ -251,7 +258,7 @@ i{
     width: 1px;
     height: 190px;
     background-color: var(--bleu-saphir-fonce);
-    margin: 40px auto;
+    
 }
 .divider-profile::before {
     content: "";
@@ -269,7 +276,6 @@ i{
     width: 1px;
     height: 390px;
     background-color: var(--bleu-saphir-fonce);
-    margin: 40px auto;
 }
 .divider-experience::before {
     content: "";
