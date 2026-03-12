@@ -4,11 +4,11 @@
   --tertiary-color: #c9c9c9;
   --font-main: "Inter", sans-serif;
   --blanc: #fff;
+  --new-color: #5f74a7;
 }
 
 body {
   font-family: var(--font-main);
-
 }
 
 .telecharger {
@@ -20,7 +20,7 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  bottom: 20px;
+  bottom: 20px; 
   right: 5%;
   font-size: 1em;
 }
@@ -68,13 +68,26 @@ body {
 .retourMain {
   display: flex;
   align-items: center;
-  gap: 10px;
   cursor: pointer;
   color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 2px 15px 5px 3px;
+  border-radius: 10px;
+  a{
+    text-decoration: none;
+  }
+
+}
+.retourMain:hover {
+    /* background: var(--new-color); */
+    transition-duration: 200ms;
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.488);
+    /* text-decoration: underline; */
 }
 
 i {
-  padding: 8px;
+  padding: 10px;
 }
 
 @media print {

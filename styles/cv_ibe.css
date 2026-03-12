@@ -2,6 +2,7 @@
     --bleu-saphir-fonce: #183684;
     --turquoise-vif: #19B9D4;
     --gris-clair: #C9C9C9;
+    
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -38,10 +39,10 @@ li{
 }
 .cv-content {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 35% 65%      ;
 }
 .info{
-    background-color: #182a5a;
+    background-color: #6277AC;
     color: #fff;
     padding: 10px;
     /* push content down so profile image doesn't overlap */
@@ -61,6 +62,8 @@ li{
     padding: 15px;
     background: white;
 }
+
+
 
 .experience {
     .experience-item {
@@ -85,11 +88,19 @@ li{
     }
 }
 
+.divider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .divider-profile {
     position: relative;
     width: 2px;
-    height: 200px;
+    height: 170px;
     background-color: var(--bleu-saphir-fonce);
+    
     
 }
 .divider-profile::before {
@@ -106,7 +117,7 @@ li{
 .divider-experience {
     position: relative;
     width: 2px;
-    height: 350px;
+    height: 300px;
     background-color: var(--bleu-saphir-fonce);
 }
 .divider-experience::before {
@@ -124,13 +135,13 @@ li{
 .divider-education {
     position: relative;
     width: 2px;
-    height: 130px;
+    height: 110px;
     background-color: var(--bleu-saphir-fonce);
 }
 .divider-education::before {
     content: "";
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: -5px;
     width: 10px;
     height: 10px;
@@ -144,6 +155,7 @@ li{
     flex-direction: row;
     gap: 20px;
 }
+.profile{}
 
 .lieu{
     display: flex;
@@ -163,20 +175,14 @@ li{
     justify-content: space-around;
     padding: 20px;
 }
-.retour {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    color: var(--primary-color);
-}
+
 
 i{
     padding: 8px;
 }
 @media screen and (max-width: 768px) {
     p{
-        font-size: 12px;
+        font-size: 11px;
     }
     li{
         font-size: 12px;
@@ -184,6 +190,17 @@ i{
     i{
         padding: 0;
     }
+.divider{
+    margin-top: 0px;
+}
+.education {
+    width: 80%;
+    
+   
+}
+.detail {
+    gap: 0;
+}
 
     .personal-info {
         padding-left: 20px;
@@ -207,7 +224,6 @@ i{
     
     .cv-container {
         max-width: 100%;
-        margin: 10px;
         padding: 0;
     }
 
@@ -242,7 +258,7 @@ i{
     width: 1px;
     height: 190px;
     background-color: var(--bleu-saphir-fonce);
-    margin: 40px auto;
+    
 }
 .divider-profile::before {
     content: "";
@@ -260,7 +276,6 @@ i{
     width: 1px;
     height: 390px;
     background-color: var(--bleu-saphir-fonce);
-    margin: 40px auto;
 }
 .divider-experience::before {
     content: "";

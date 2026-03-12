@@ -13,15 +13,19 @@
   <body>
     <div class="container_telechargement">
       <div class="retourMain">
-        <h3>
+        <h3 class="retour_a_enlever">
           <i class="fa-solid fa-arrow-left"></i>
           <a href="../index.html">Retour</a>
         </h3>
       </div>
       <div>
-        <button type="button" class="telecharger" onclick="window.print()">
+        <!-- <button type="button" class="telecharger" onclick="window.print()">
           <i class="fa-solid fa-download"></i> Télécharger le CV
-        </button>
+        </button> -->
+        <button type="button" class="telecharger" data-docpath="../cv/PDF/cv_Mohamed.pdf"
+                onclick="downloadPDF(this,`cv_Mohamed`)">
+                <i class="fa-solid fa-download"></i> Télécharger le CV
+            </button>
       </div>
     </div>
     <div class="message" id="message">
@@ -36,7 +40,7 @@
         </div>
       </header>
     </div>
-    <div class="cv">
+    <div class="cv" id="cv">
       <!-- COLONNE GAUCHE -->
       <aside class="left">
         <section>
@@ -73,8 +77,10 @@
 
       <!-- COLONNE DROITE -->
       <main class="right">
+        <div class="ligne-verticale"></div>
         <section class="profile">
-          <h3>PROFILE</h3>
+           <i id="profile-icon" class="fa-solid fa-user"></i>
+          <h3 >   PROFILE</h3>
           <p>
             Étudiant en développement web, passionné par la création
             d'interfaces modernes et interactives. Je maîtrise les bases du
@@ -84,13 +90,15 @@
           </p>
         </section>
 
+        <div class="ligne-formation"></div>
         <section class="formation">
-          <h3>FORMATIONS</h3>
+          <i id="formation-icon" class="fa-solid fa-graduation-cap"></i>
+          <h3>  FORMATIONS</h3>
 
           <div class="item">
             <div class="ligne">
               <strong>Diplôme de Licence</strong>
-              <span class="date">2034 - 2017</span>
+              <span class="date">2024 - 2025</span>
             </div>
 
             <p>GLTW</p>
@@ -100,7 +108,7 @@
           <div class="item">
             <div class="ligne">
               <strong>Attestation de Formation</strong>
-              <span class="date">2034 - 2017</span>
+              <span class="date">2024</span>
             </div>
             <p>Anglais (Intermédiaire)</p>
             <p>Expert-Lab Technologie</p>
@@ -109,7 +117,7 @@
           <div class="item">
             <div class="ligne">
               <strong>D.U.T</strong>
-              <span class="date">2034 - 2017</span>
+              <span class="date">2022 - 2024</span>
             </div>
 
             <p>Analyse-Programmation – TECHNOLAB-ISTA</p>
@@ -118,23 +126,23 @@
           <div class="item">
             <div class="ligne">
               <strong>Baccalauréat</strong>
-              <span class="date">2034 - 2017</span>
+              <span class="date">2020 - 2021</span>
             </div>
             <p>Terminale Science Expérimentale (TSEXP)</p>
             <p>LAHDO</p>
           </div>
         </section>
 
+        <div class="ligne-interet"></div>
         <section class="interet">
-          <h3>CENTRES D’INTÉRÊT</h3>
+          <i id="interet-icon" class="fa-solid fa-graduation-cap"></i>
+          <h3> CENTRES D’INTÉRÊT</h3>
           <p>Lecture sur les nouvelles technologies</p>
           <p>Sport : Football</p>
         </section>
       </main>
     </div>
 
-
-
-
+   <script src="../js/script.js"></script>
   </body>
 </html>
