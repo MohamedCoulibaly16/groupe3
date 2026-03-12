@@ -43,12 +43,14 @@ li{
     display: grid;
     grid-template-columns: 35% 65%      ;
 }
-.photo{
+.partie-gauche{
     background-color: #182a5a;
     color: #fff;
-    padding: 0;
     /* push content down so profile image doesn't overlap */
     padding-top: 100px;
+}
+.partie-gauche ul {
+    padding-right: 15px;
 }
 .profile-image {
     position: absolute;
@@ -59,10 +61,17 @@ li{
     border-radius: 50%;
    
     
-}
+
+ }
+ .info-detail i{
+    margin-left: -40px;
+ }
+
 .info-detail {
-    padding: 5px;
+    padding: 15px;
     background: white;
+    margin-left: -40px;
+    position: relative;
 }
 
 .experience {
@@ -76,7 +85,6 @@ li{
     }
 }
 .education {
-    width: 100%;
     .education-item {
         display: flex;
         flex-direction: row;
@@ -97,8 +105,9 @@ hr {
 .divider-profile {
     position: relative;
     width: 2px;
-    height: 200px;
-    background-color: var(--bleu-saphir-fonce);
+    height: 150px;
+    background-color: black;
+    top: 50px;
     
 }
 
@@ -106,8 +115,8 @@ hr {
 .divider-profile::before {
     content: "";
     position: absolute;
-    top: 50px;
-    left: -5px;
+    top: 43px;
+    left: -6px;
     width: 10px;
     height: 10px;
     background-color: var(--gris-clair);
@@ -117,8 +126,9 @@ hr {
 .divider-experience {
     position: relative;
     width: 2px;
-    height: 350px;
-    background-color: var(--bleu-saphir-fonce);
+    height: 187px;
+    background-color: black;
+    top: 53px;
 }
 .divider-experience::before {
     content: "";
@@ -135,8 +145,9 @@ hr {
 .divider-education {
     position: relative;
     width: 2px;
-    height: 130px;
-    background-color: var(--bleu-saphir-fonce);
+    height: 105px;
+    top: 50px;
+    background-color: black
 }
 .divider-education::before {
     content: "";
@@ -149,6 +160,7 @@ hr {
     border-radius: 20px ;
     border: 2px solid var(--bleu-saphir-fonce);
 }
+
 
 .detail {
     display: flex;
