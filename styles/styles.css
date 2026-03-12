@@ -233,9 +233,9 @@ footer {
 .anim-3 {
   transition-delay: 0.3s;
 }
-.anim-4 {
-  transition-delay: 0.4s;
-}
+  .anim-4 {
+    transition-delay: 0.4s;
+  }
 
 @media only screen and (max-width: 1200px) {
   #card-container {
