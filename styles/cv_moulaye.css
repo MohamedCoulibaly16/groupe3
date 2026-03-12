@@ -56,12 +56,13 @@ body {
     span {
       font-size: 1.1rem;
       font-weight: bold;
+      text-transform: uppercase;
     }
     span::after {
       content: " ";
       display: block;
       height: 0.2rem;
-      width: 100px;
+      width: 215px;
       background-color: #fff;
       margin: 10px 0;
     }
@@ -98,12 +99,16 @@ body {
     width: 40%;
     background-color: var(--secondary-color);
     padding: 250px 20px 50px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+
 
     article {
       margin-bottom: 1rem;
       h2 {
         margin-bottom: 1.4rem;
         font-size: 1.6rem;
+        text-transform: uppercase;
       }
     }
     article#coordonnees ul {
@@ -118,6 +123,9 @@ body {
         gap: 0.2rem;
         img {
           width: 1rem;
+          /* border: 1px solid TRANSPARENT;
+          border-radius: 50%;
+          background-color: var(--secondary-color); */
         }
       }
       li::before {
@@ -141,7 +149,18 @@ body {
       margin: 10px -3px;
     }
     ul {
-      list-style-type: disc;
+      list-style-type: none;
+    }
+      li::before {
+      content: "";
+      display: inline-block;
+      height: 6px;
+      width: 6px;
+      border-radius: 100%;
+      background-color: #000;
+      position: absolute;
+      top: 35%;
+      left: -25px;
     }
     #Formation {
       ul {
@@ -149,29 +168,29 @@ body {
 
         span {
           font-weight: bold;
-          color: var(--primary-color);
+          text-transform: uppercase;
+          
         }
+        
+       
       }
     }
     article#Experience {
-      /* padding: 0 0.5rem; */
 
       .ex-role {
-        /* padding-left: 1rem; */
         font-size: 1.5rem;
         font-weight: bold;
+        text-transform: uppercase;
       }
       .experience-item {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* padding-left: 1rem; */
         font-size: 1.1rem;
         margin: 12px 0;
       }
       ul {
-        /* padding-left: 2.2rem; */
-        list-style-type: disc;
+       
         font-size: 1rem;
       }
     }
@@ -281,7 +300,7 @@ body {
         transform: translateX(-14px);
         margin-bottom: 0.2rem;
         span {
-          width: 140px;
+          /* width: 140px; */
           display: inline-block;
           white-space: nowrap;
           overflow: hidden;
@@ -293,6 +312,8 @@ body {
     #sidebar {
       padding: 10px;
       width: 45%;
+       border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
       article {
         h2 {
           font-size: 0.9rem;
@@ -312,9 +333,16 @@ body {
       h2::after {
         width: 50px;
       }
+       ul {
+        padding-left: 1.5rem;
+    }
+      li::before {
+      position: absolute;
+      top: 35%;
+      left: -22px;
+    }
       #Formation {
         ul {
-          padding-left: 1rem;
           font-size: 0.7rem;
         }
       }
@@ -328,7 +356,6 @@ body {
           margin: 10px 0;
         }
         ul {
-          padding-left: 1rem;
           font-size: 0.6rem;
         }
       }

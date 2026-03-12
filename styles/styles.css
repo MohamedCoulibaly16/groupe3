@@ -222,20 +222,21 @@ footer {
 .anim-card {
   opacity: 0;
   transform: translateY(30px);
+  
 }
+
 
 [class*="anim-"] {
   transition: 1.5s cubic-bezier(0.51, 0, 0, 0.97);
 }
 .anim-2 {
+
   transition-delay: 0.1s;
 }
 .anim-3 {
   transition-delay: 0.3s;
 }
-.anim-4 {
-  transition-delay: 0.4s;
-}
+
 
 @media only screen and (max-width: 1200px) {
   #card-container {
