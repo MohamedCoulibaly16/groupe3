@@ -241,71 +241,9 @@
     top: 40px;
 }
 
-@media print {
-
-    body {
-        background: white;
-    }
-
-    /* cacher les éléments inutiles */
-    .telecharger,
-    .retour,
-    .message,
-    .retour_a_enlever {
-        display: none !important;
-    }
-
-    /* éviter le vw/vh en print */
-    .cv {
-        width: 100% !important;
-    }
-
-    header {
-        width: 100% !important;
-        height: 200px !important;
-    }
-
-    /* éviter que la photo sorte */
-    .photo {
-        position: static;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .photo img {
-        width: 150px;
-        height: 150px;
-    }
-
-    /* éviter les coupures bizarres */
-    .cv {
-        page-break-inside: avoid;
-    }
-
-    section {
-        page-break-inside: avoid;
-    }
-    @media print {
-
-  header,
-  .cv {
-    page-break-after: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-  .photo {
-   position: absolute;
-}
-
-body {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
-}
 
 
-}   
+  
 
 
 
@@ -345,4 +283,162 @@ body {
 .left li:hover {
     transform: translateX(5px);
     transition: 0.2s;
+}
+
+/* responsive  */
+
+
+/* =========================
+   TABLETTE (max 1024px)
+   ========================= */
+
+@media screen and (max-width: 1024px) {
+
+    header{
+        width: 90%;
+    }
+
+    .cv{
+        width: 90%;
+    }
+
+    header h1{
+        font-size: 2em;
+        margin-right: 1.5em;
+    }
+
+    .photo img{
+        width: 14em;
+        height: 14em;
+    }
+
+}
+
+
+/* =========================
+   PETITE TABLETTE (768px)
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+    header{
+        width: 100%;
+        height: auto;
+        padding: 3em 1em;
+        text-align: center;
+    }
+
+    header h1{
+        text-align: end;
+        margin: 0;
+        font-size: 1.5em;
+        padding-right: 1em;
+    }
+
+    .cv{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    
+    .right{
+        width: 100%;
+    }
+    .left{
+        width: 60%;
+    }
+
+    .photo{
+        position: absolute;
+        text-align: center;
+        margin-bottom: 4em;
+        margin-left: 1em;
+        top: 1em;
+        left: 1em;
+    }
+
+    .photo img{
+       width: 9em;
+        height: 9em;
+    }
+
+    .right section{
+        padding: 0 1.5em;
+        font-size: 0.7em;
+    }
+    .left section{
+        padding: 0 0.5em;
+        font-size: 0.7em;
+        margin-bottom: .2em;
+
+    }
+
+    /* cacher les lignes décoratives */
+    .ligne-verticale,
+    .ligne-formation,
+    .ligne-interet{
+        display: none;
+    }
+
+}
+
+
+/* =========================
+   MOBILE (480px)
+   ========================= */
+
+@media screen and (max-width: 480px) {
+
+    body{
+        font-size: 13px;
+    }
+
+    header{
+        padding: 2em 1em;
+    }
+
+    header h1{
+        font-size: 1.5em;
+    }
+
+    .photo img{
+        width: 6em;
+        height: 6em;
+    }
+
+    .left{
+        padding: 2em 1.5em;
+    }
+
+    .right section{
+        padding: 0 1em;
+    }
+
+    .item .ligne{
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    
+    
+    .left .contact{
+        width: 100%;
+        /* padding: 15px; */
+        list-style: none;
+    }
+
+    .left .contact li{
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin: 5px 0;
+    }
+
+    .left .contact i{
+        width: 25px;      /* largeur fixe pour aligner */
+        text-align: center;
+        /* flex-shrink: 0; */
+    }
+
+    
 }
