@@ -24,13 +24,19 @@
                 <h3><i class="fa-solid fa-arrow-left"></i> <a href="../index.html">Retour</a></h3>
             </div>
             <div class="download">
+              <!-- methode 1: -->
               <button type="button" class="telecharger" data-docpath="../cv/PDF/CV_Adama.pdf"
                 onclick="downloadPDF(this,`CV Adama Diarra`)">
                 <i class="fa-solid fa-download"></i> Télécharger le CV
-            </button>
+            </button> 
+
+            <!-- methiode 2: -->
             <!-- <a href="../images/CV_Adama.pdf" download="CV_Adama.pdf">
                <button class="telecharger"><i class="fa-solid fa-download"></i>Télécharger le CV</button>
             </a>        -->
+
+            <!-- methode 3: -->
+            <!-- <button class="telecharger" onclick="window.print()"><i class="fa-solid fa-download"></i>Télécharger le CV</button> -->
           </div>
     </div>
   <div class="cv">
@@ -38,7 +44,7 @@
     <div class="header">
       <div class="nom">
         <h1 class="titres">DIARRA ADAMA</h1>
-        <p class="paragraph">Licence Génie Infomatique</p>
+        <p class="paragraph">Développeur Full-Stack</p>
       </div>
     </div>
     <div class="contenus">
@@ -47,14 +53,122 @@
         <img src="../images/adma.png" alt="Photo_Identité_Adama">
         <!-- Partie d'education -->
         <section class="sect">
-          <h1 class="titre_glob">EDUCATION ------</h1>
-          <p><strong>2025</strong><br>Licence Génie Informatique | ISA</p>
-          <p><strong>2021</strong><br>Baccalauréat | LPNKD</p>
-          <p><strong>2018</strong><br>DEF | Sabougnouman II</p>
+          <div class="tiret_long"><h1 class="titre_glob">EDUCATION</h1></div>
+          <p><strong>2025</strong><br><span>Licence Génie Informatique | ISA</span></p>
+          <p><strong>2021</strong><br><span>Baccalauréat | LPNKD</span></p>
+          <p><strong>2018</strong><br><span>DEF | Sabougnouman II</span></p>
+        </section>
+        <!-- partie compétences -->
+        <section class="sect">
+          <div class="tiret_long"><h1 class="titre_glob">COMPETENCES</h1></div>
+          <!-- <div class="cercle">
+            <span></span>
+          </div>  -->
+          <div class="tiret">
+            <h3 class="titre_glob_sous_comp">Bureautique :</strong></h3>
+            <ul>
+             <li>Word</li>
+             <li>Excel</li>
+             <li>PowerPoint</li>
+            <li>Internet</li>
+           </ul>
+           <!-- <div class="cercle">
+            <span></span>
+           </div>  -->
+          </div>
+          <div class="tiret">
+            <h3 class="titre_glob_sous_comp">Graphisme</h3>
+            <ul>
+             <li>Photoshop</li>
+             <li>Illustrator</li>
+             <li>Indesign</li>
+             <li>Premiere Pro</li>
+           </ul>
+           <!-- <div class="cercle">
+            <span></span>
+           </div>  -->
+          </div>
+          <div class="tiret">
+           <h3 class="titre_glob_sous_comp">Programmation</h3>
+            <ul>
+             <li>HTML, CSS</li>
+             <li>Python (Django)</li>
+             <li>Dart (Flutter)</li>
+             <li>Java</li>
+            </ul>
+            <!-- <div class="cercle">
+            <span></span>
+            </div>  -->
+           </div> 
+          <div class="tiret">
+            <h3 class="titre_glob_sous_comp">Base de Données</h3>
+             <ul>
+              <li>MySQL</li>
+              <li>SQLite</li>
+              </ul>
+          </div>
+        </section>
+        <!-- Partie langue -->
+        <section class="sect">
+          <div class="tiret_long"><h1 class="titre_glob">LANGUE</h1></div>
+          <ul>
+            <li>Bambara</li>
+            <li>Français</li>
+            <li>Anglais(Intermediaire)</li>
+          </ul>
+        </section>
+        <!-- Partie Contact -->
+        <section class="sect">
+          <div class="tiret_long"><h1 class="titre_glob">CONTACT</h1></div>
+          <div class="icon"><p><img src="../images/phone.png" alt="logo_Appel" class="icons"> 64 02 76 02/ 94 39 73 74</p></div>
+          <div class="icon"><p><img src="../images/email.png" alt="logo_email" class="icons"> ad5299019@gmail.com</p></div>
+          <div class="icon"><p><img src="../images/map.png" alt="logo_adresse" class="icons"> Dialakorodji</p></div>
+        </section>
+      </div>
+      <!-- colonne droite -->
+      <div class="content_droite">
+         <section class="sect">
+          <div class="tiret_long"><h1 class="titre_glob">PROFIL</h1></div>
+          <p class="descript">Je suis un développeur full-stack passionné par la création de solutions innovantes. 
+            je me spécialise dans la conception et le développement d’applications web et mobiles, 
+            possédant des compétencces solides dans les technologies comme Python avec Django, 
+            Dart avec Flutter, et Java. 
+            Mon intérêt se porte sur des solutions numériques complètes, englobant la conception 
+            d’interfaces utilisateur, le backend, et l’intégration de bases de données. 
+            Mes compétences en infographie avec Adobe Photoshop, Illustrator, 
+            et Premiere Pro me permettent de créer des interfaces attractives et des supports multimédias. 
+            Motivé et orienté vers la résolution de problèmes, je m'efforce d'améliorer mes compétences et 
+            de m'impliquer dans des projets innovants. Mon objectif est de contribuer à des projets 
+            stimulants qui ont un impact positif sur les utilisateurs.
+          </p>
+        </section>
+        <!-- partie expérience -->
+        <section class="sect">
+          <div class="tiret_long"><h1 class="titre_glob">EXPERIENCE</h1></div>
+          <!-- <h3 class="titre_glob">Stage <strong>2025</strong> <br> à l’Agence Malienne de RadioProtection (AMARAP)</h3> -->
+          <div class="titre_experience">
+            <div>
+                <!-- <div class="cercle">
+                <span></span>
+                </div>  -->
+                <div class="tiret">
+                    <h3 class="titre_glob_sous">Stage <br>
+                      À l’Agence Malienne de RadioProtection (AMARAP)
+                    </h3>
+                    <p>Découverte et participation aux activités liées à la gestion et à la sécurité radiologique.
+                   Contribution à l’analyse des données et assistance dans les procédures de radioprotection.
+                    Développement de compétences en organisation, rigueur et travail en environnement professionnel.
+                   </p>
+                  </div>
+            </div>
+            <div class="exp_date">
+              <h3>2025</h3>
+            </div>
+          </div>
         </section>
         <!-- Partie formations -->
         <section class="sect">
-          <h1 class="titre_glob">FORMATIONS ------</h1>
+          <div class="tiret_long"><h1 class="titre_glob">FORMATIONS</h1></div>
           <p><strong>2025</strong>
             <br>
           <ul>
@@ -72,89 +186,8 @@
           <p>| à compétence plus consulting | Atteesté</p>
           </p>
         </section>
-        <!-- Partie langue -->
         <section class="sect">
-          <h1 class="titre_glob">LANGUE ------</h1>
-          <ul>
-            <li>Bambara</li>
-            <li>Français</li>
-            <li>Anglais(Intermediaire)</li>
-          </ul>
-        </section>
-        <!-- Partie Contact -->
-        <section class="sect">
-          <h1 class="titre_glob">CONTACT ------</h1>
-          <p><img src="../images/phone.png" alt="logo_Appel" class="icons"> 64 02 76 02/94 39 73 74</p>
-          <p><img src="../images/email.png" alt="logo_email" class="icons"> ad5299019@gmail.com</p>
-          <p><img src="../images/map.png" alt="logo_adresse" class="icons"> Dialakorodji</p>
-        </section>
-      </div>
-      <!-- colonne droite -->
-      <div class="content_droite">
-        <!-- partie compétences -->
-        <section class="sect">
-          <h1 class="titre_glob">COMPETENCES ----------------------</h1>
-          <!-- <div class="cercle">
-            <span></span>
-          </div>  -->
-          <div class="tiret">
-            <h3 class="titre_glob">Bureautique :</strong></h3>
-            <ul>
-             <li>Word</li>
-             <li>Excel</li>
-             <li>PowerPoint</li>
-            <li>Internet</li>
-          </ul>
-          <!-- <div class="cercle">
-            <span></span>
-          </div>  -->
-            <h3 class="titre_glob">Graphisme</h3>
-            <ul>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Indesign</li>
-            <li>Premiere Pro</li>
-          </ul>
-          <!-- <div class="cercle">
-            <span></span>
-          </div>  -->
-          <h3 class="titre_glob">Programmation</h3>
-          <ul>
-            <li>HTML, CSS</li>
-            <li>Python (Django)</li>
-            <li>Dart (Flutter)</li>
-            <li>Java</li>
-          </ul>
-          <!-- <div class="cercle">
-            <span></span>
-          </div>  -->
-          <h3 class="titre_glob">Base de Données</h3>
-          <ul>
-            <li>MySQL</li>
-            <li>SQLite</li>
-          </ul>
-        </div>
-        </section>
-        <!-- partie expérience -->
-        <section class="sect">
-          <h1 class="titre_glob">EXPERIENCE  -----------------------</h1>
-          <!-- <h3 class="titre_glob">Stage <strong>2025</strong> <br> à l’Agence Malienne de RadioProtection (AMARAP)</h3> -->
-          <div class="titre_experience">
-            <div>
-              <!-- <div class="cercle">
-               <span></span>
-              </div>  -->
-              <h3>Stage <br>
-                À l’Agence Malienne de RadioProtection (AMARAP)
-              </h3>
-            </div>
-            <div class="exp_date">
-              <h3>2025</h3>
-            </div>
-          </div>
-        </section>
-        <section class="sect">
-          <h1 class="titre_glob">CENTRE D'INTERET ----------------------</h1>
+          <div class="tiret_long"><h1 class="titre_glob">CENTRE D'INTERET</h1></div>
           <!-- <div class="cercle">
             <span></span>
           </div>  -->
