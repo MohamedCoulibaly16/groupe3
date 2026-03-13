@@ -143,6 +143,7 @@ main {
   transition-duration: 200ms;
   transform: translateY(-10px);
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.288);
+  background-color: lightgray;
 }
 
 .photo {
