@@ -285,12 +285,6 @@
     transition: 0.2s;
 }
 
-/* responsive  */
-
-
-/* =========================
-   TABLETTE (max 1024px)
-   ========================= */
 
 @media screen and (max-width: 1024px) {
 
@@ -314,10 +308,6 @@
 
 }
 
-
-/* =========================
-   PETITE TABLETTE (768px)
-   ========================= */
 
 @media screen and (max-width: 768px) {
 
@@ -382,10 +372,6 @@
 
 }
 
-
-/* =========================
-   MOBILE (480px)
-   ========================= */
 
 @media screen and (max-width: 480px) {
 
