@@ -23,11 +23,14 @@ body {
     display: flex;
     padding-left: 280px;
     flex-direction: column;
-    background-color: #79a3e2;
+    background-color: #182a5a;
     color: #fff;
-    padding-bottom: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+   
     h1{
         font-size: clamp(rem, 5vw, 2rem);
+        margin-bottom: O;
        
     }
     h2{
@@ -43,26 +46,35 @@ li{
     display: grid;
     grid-template-columns: 35% 65%      ;
 }
-.photo{
-    background-color: #182a5a;
+.partie-gauche{
+    background-color: #6277AC;
     color: #fff;
-    padding: 0;
     /* push content down so profile image doesn't overlap */
     padding-top: 100px;
+}
+.partie-gauche ul {
+    padding-right: 5px;
 }
 .profile-image {
     position: absolute;
     padding: 2%;
-    top: 25%;
-    width: 150px;
-    height: 150px;
+    top: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
    
     
-}
+
+ }
+ .info-detail i{
+    margin-left: -40px;
+ }
+
 .info-detail {
-    padding: 5px;
+    padding: 15px;
     background: white;
+    margin-left: -40px;
+    position: relative;
 }
 
 .experience {
@@ -70,13 +82,13 @@ li{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 0;
     }
      h3{
         font-size: large;
     }
 }
 .education {
-    width: 100%;
     .education-item {
         display: flex;
         flex-direction: row;
@@ -97,17 +109,24 @@ hr {
 .divider-profile {
     position: relative;
     width: 2px;
-    height: 200px;
-    background-color: var(--bleu-saphir-fonce);
+    height: 145px;
+    background-color: black;
+    top: 50px;
     
+}
+
+.montrait { 
+    background-color: white;
+     width: 250px;
+  margin: 0 5px 0 ;
 }
 
 
 .divider-profile::before {
     content: "";
     position: absolute;
-    top: 50px;
-    left: -5px;
+    top: 30px;
+    left: -6px;
     width: 10px;
     height: 10px;
     background-color: var(--gris-clair);
@@ -117,13 +136,14 @@ hr {
 .divider-experience {
     position: relative;
     width: 2px;
-    height: 350px;
-    background-color: var(--bleu-saphir-fonce);
+    height: 553px;
+    background-color: black;
+    top: 53px;
 }
 .divider-experience::before {
     content: "";
     position: absolute;
-    top: 50px;
+    top: 65px;
     left: -5px;
     width: 10px;
     height: 10px;
@@ -135,8 +155,9 @@ hr {
 .divider-education {
     position: relative;
     width: 2px;
-    height: 130px;
-    background-color: var(--bleu-saphir-fonce);
+    height: 170px;
+    top: 50px;
+    background-color: black
 }
 .divider-education::before {
     content: "";
@@ -149,6 +170,7 @@ hr {
     border-radius: 20px ;
     border: 2px solid var(--bleu-saphir-fonce);
 }
+
 
 .detail {
     display: flex;
