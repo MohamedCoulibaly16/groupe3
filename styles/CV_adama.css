@@ -1,7 +1,6 @@
 
  @import url('main.css'); 
 
- body
 
  .cv {
 
@@ -31,6 +30,7 @@
 }
 
 
+
  .contenus {
             /* width: 900px;
             margin: 20px auto; */
@@ -52,9 +52,10 @@
 }
  .paragraph {
   font-family: 'Inter', sans-serif;  
-  font-weight: bold;
+  font-weight: normal;
   font-style:normal;
   font-size: 20px;
+  margin-right: 6%;
 } 
 
 .profil{
@@ -135,7 +136,7 @@ img{
 
 .sect p{
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: normal;
      font-size: 15px; 
 }
 
@@ -162,7 +163,7 @@ img{
 
  ul li{
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: normal;
     font-size: 15px; 
      
      
