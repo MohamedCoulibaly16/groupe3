@@ -5,10 +5,13 @@
   --font-main: "Inter", sans-serif;
   --blanc: #fff;
   --new-color: #5f74a7;
+   --couleur-fond: #f5f7fa;
+
 }
 
 body {
   font-family: var(--font-main);
+  background-color: var(--couleur-fond);
 }
 
 .telecharger {
@@ -94,4 +97,8 @@ i {
   .no-print {
     display: none;
   }
+}
+
+#hero-text{
+  transition: opacity 0.5s ease;
 }

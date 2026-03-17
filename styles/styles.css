@@ -20,6 +20,10 @@ header {
   justify-content: space-between;
   padding: 10px 50px;
   border-bottom: 2px solid var(--primary-color);
+  position: sticky;
+  top: 0;
+  background-color: var(--blanc);
+  z-index: 1;
 
   img {
     width: clamp(120px, 16vw, 17vw);
@@ -124,10 +128,11 @@ main {
   height: 275px;
   padding: 12px 10px;
   border-radius: 20px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.288);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: white;
 
   figure {
     display: flex;
@@ -148,9 +153,13 @@ main {
 
 .photo {
   height: 230px;
+  width: 180px;
+  object-fit: cover;
   border-radius: 50px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.377);
 }
+
+
 
 .card-info-section {
   display: flex;
@@ -264,4 +273,11 @@ footer {
     grid-template-columns: 1fr;
     justify-content: center;
   }
+}
+
+#hero-text{
+  display: inline-block;
+  transition: all 0.6s ease;
+  transform: translateX(0);
+  opacity: 1;
 }
