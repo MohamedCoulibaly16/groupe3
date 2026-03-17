@@ -50,13 +50,14 @@ li{
 }
 .profile-image {
     position: absolute;
-    padding: 4%;
-    top: 130px;
+    top: 28%;
+    left: 29%;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
     object-fit: cover;
-    
+    border: 3px solid #19B9D4;
+    border-radius: 50%; /* image ronde */
+    padding: 0px;
 }
 .info-detail {
     padding: 15px;
@@ -215,11 +216,14 @@ i{
             margin: 0;
         }
     }
-    .profile-image {
+     .profile-image {
         position: static;
         width: 100px;
         height: 100px;
         margin-left: 0;
+        border: 3px solid #19B9D4;
+        border-radius: 50%; /* image ronde */
+        padding: 0px;
     }
     
     .cv-container {
