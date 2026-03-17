@@ -42,7 +42,7 @@ li{
     grid-template-columns: 35% 65%      ;
 }
 .info{
-    background-color: #182a5a;
+    background-color: #6277AC;
     color: #fff;
     padding: 10px;
     /* push content down so profile image doesn't overlap */
@@ -86,11 +86,19 @@ li{
     }
 }
 
+.divider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .divider-profile {
     position: relative;
     width: 2px;
-    height: 200px;
+    height: 170px;
     background-color: var(--bleu-saphir-fonce);
+    
     
 }
 .divider-profile::before {
@@ -107,7 +115,7 @@ li{
 .divider-experience {
     position: relative;
     width: 2px;
-    height: 350px;
+    height: 300px;
     background-color: var(--bleu-saphir-fonce);
 }
 .divider-experience::before {
@@ -125,7 +133,7 @@ li{
 .divider-education {
     position: relative;
     width: 2px;
-    height: 130px;
+    height: 110px;
     background-color: var(--bleu-saphir-fonce);
 }
 .divider-education::before {
@@ -145,6 +153,7 @@ li{
     flex-direction: row;
     gap: 20px;
 }
+.profile{}
 
 .lieu{
     display: flex;
@@ -164,13 +173,7 @@ li{
     justify-content: space-around;
     padding: 20px;
 }
-.retour {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    color: var(--primary-color);
-}
+
 
 i{
     padding: 8px;

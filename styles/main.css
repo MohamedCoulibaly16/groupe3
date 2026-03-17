@@ -69,7 +69,6 @@ body {
 .retourMain {
   display: flex;
   align-items: center;
-  gap: 10px;
   cursor: pointer;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
@@ -89,7 +88,7 @@ body {
 }
 
 i {
-  padding: 8px;
+  padding: 10px;
 }
 
 @media print {
