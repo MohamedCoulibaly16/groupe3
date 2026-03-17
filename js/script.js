@@ -90,3 +90,41 @@ const callback1 = function (entries, observer) {
 };
 const t1 = new IntersectionObserver(callback1, options1);
 document.querySelectorAll(".anim-card").forEach((el) => t1.observe(el));
+
+const texts = [
+"Bienvenue sur le portail virtuel de l’Alliance Digitale",
+"Nous transformons des idées en applications",
+"Coder aujourd’hui pour créer le monde de demain",
+"Du code, de la passion avec beaucoup de joie",
+"Un bug de moins, une solution de plus",
+"Avec alliance digitale toujours une ligne de plus"
+];
+
+let index = 0;
+const heroText = document.getElementById("hero-text");
+
+setInterval(() => {
+
+  heroText.style.transform = "translateX(-50px)";
+  heroText.style.opacity = "0";
+
+  setTimeout(() => {
+
+    // index = (index + 1) % texts.length;
+    index++
+    if (index == texts.length ) {
+      index = 0
+      
+    }
+    heroText.textContent = texts[index];
+
+    heroText.style.transform = "translateX(50px)";
+
+    setTimeout(() => {
+      heroText.style.transform = "translateX(0)";
+      heroText.style.opacity = "1";
+    },50);
+
+  },600);
+
+},4000);
