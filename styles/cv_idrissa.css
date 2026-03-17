@@ -1,147 +1,270 @@
+/* --- VARIABLES & RESET --- */
+:root {
+    --dark-blue: #2f3542;
+    --light-gray: #e6e8e9;
+    --text-dark: #333;
+    --text-light: #777;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
 }
 
 body {
-    background: #f4f4f4;
+    background-color: #525659; /* Fond sombre pour faire ressortir le CV */
+    padding: 40px 0;
 }
 
-.container {
+/* --- CONTENEUR PRINCIPAL --- */
+.cv-container {
+    width: 850px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- EN-TÊTE HAUT (Bleu foncé) --- */
+.header-bg {
+    height: 140px;
+    background-color:  #183684;
     display: flex;
-    width: 210mm;
-     min-height: 297mm; 
-    margin: 40px auto;
-    background: white;
 }
-
-.left {
-    width: 25%;
-    background:  #5f74a7;
-    color: white;
-    padding: 20px;
-
+.header-bg .left-filler {
+    width: 33%;
 }
-
-.profile-img {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 50px;
-
+.header-bg .right-title {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    color: #fff;
 }
-
-.profile-img img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid white;
-}
-
-.left h2 {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-.left ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-
-.right {
-    width: 95%;
-    padding: 10px;
-    flex: 100px; 
-}
-.header{
-    width: 100%;
-    background-color: #183684;
-    flex: 100px;
-    color:white;
-    padding: 20px;
-}
-.header h1 {
+.right-title h1 {
     font-size: 32px;
-    text-align: center;
+    font-weight: 700;
     letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.right-title h2 {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 3px;
 }
 
-.header h1 span {
-    font-weight: bold;
+/* --- CORPS DU CV --- */
+.cv-body {
+    display: flex;
+    min-height: 800px;
 }
 
-.header h3 {
-    color: white;
-    text-align: center;
-    margin-bottom: 30px;
+/* --- COLONNE DE GAUCHE (Grise) --- */
+.left-column {
+    width: 33%;
+    background-color:  #5f74a7;
+    padding: 90px 30px 40px 30px; 
+    position: relative;
 }
 
-.right h2 {
-    margin-top: 20px;
+/* Photo de profil */
+.profile-pic {
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    background-color: #fff;
+    overflow: hidden;
+}
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+}
+
+/* Sections de la colonne de gauche */
+.left-section {
+    margin-bottom: 35px;
+}
+.left-section h3 {
+    font-size: 16px;
+    color:white;;
+    letter-spacing: 2px;
     margin-bottom: 10px;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
-    color:blue;
+    font-weight: 700;
 }
-
-.job {
+.left-section hr {
+    border: none;
+    border-top: 1px solid #ccc;
     margin-bottom: 15px;
 }
 
-.job span {
-    float: right;
-    color: gray;
+/* Listes (Contact, Skills, Languages) */
+.contact-list, .skills-list, .languages-list {
+    list-style: none;
+    font-size: 16px;
+    color: white;
+    line-height: 2;
+}
+.contact-list li i {
+    width: 20px;
+    color: white;
+}
+.skills-list, .languages-list {
+    padding-left: 15px;
+    list-style-type: disc;
+}
+.skills-list li, .languages-list li {
+    margin-bottom: 5px;
+}
+
+/* Référence */
+.reference-block {
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
+}
+.reference-block h4 {
+    font-size: 12px;
+    font-weight: 700;
+}
+.reference-block .job-title {
+    margin-bottom: 8px;
+}
+
+/* --- COLONNE DE DROITE (Blanche) --- */
+.right-column {
+    width: 67%;
+    padding: 40px 40px 40px 50px;
+}
+
+/* Ligne de temps (Timeline) */
+.timeline-container {
+    border-left: 1px solid var(--dark-blue);
+    padding-left: 30px;
+    position: relative;
+}
+
+/* Section de la Timeline */
+.timeline-section {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Icônes de section (Gros ronds) */
+.section-icon {
+    position: absolute;
+    left: -46px; 
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--dark-blue);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
+    z-index: 2;
 }
 
-ul {
-    margin-left: 20px;
+/* Titre de section avec ligne horizontale */
+.section-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
-/* 🔥 BOUTON EN BAS A DROITE */
-#downloadBtn{
-    position:absolute;
-    bottom:20px;
-    right:20px;
-    padding:10px 20px;
-    background:#2c3e50;
-    color:white;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-    font-size:14px;
+.section-title h3 {
+    font-size: 16px;
+    color: var(--dark-blue);
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-right: 15px;
+    white-space: nowrap;
+}
+.section-title::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
 }
 
-#downloadBtn:hover{
-    background:#34495e;
+/* Texte profil */
+.profile-text {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.6;
+    text-align: justify;
 }
 
-/* VERSION IMPRESSION (PDF) */
-@media print{
-    body{
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-    }
-      .left {
-        background: #0b2ada !important;
-    }
+/* Éléments de la timeline (Jobs, Edu) */
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
 
-    .cv-container{
-        margin:0;
-        box-shadow:none;
-        width:100%;
-        }
+/* Petits points sur la ligne pour chaque poste */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -34px; 
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid var(--dark-blue);
+    background-color: #fff;
+    z-index: 2;
 }
-@media print {
-    #butt {
-        display: none;
-    }
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
 }
-@media print {
-    #ret{
-        display: none;
-    }
+.item-header h4 {
+    font-size: 16px;
+    color: var(--text-dark);
+    font-weight: 700;
+}
+.item-header .date {
+    font-size: 16px;
+    color: var(--text-dark);
+}
+.item-subtitle {
+    font-size: 16px;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+/* Liste de tâches */
+.tasks-list {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.6;
+    padding-left: 15px;
+    text-align: justify;
+}
+.tasks-list li {
+    margin-bottom: 4px;
+}
+
+/* Éducation */
+.edu-details {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+.edu-details strong {
+    color: var(--text-dark);
 }
