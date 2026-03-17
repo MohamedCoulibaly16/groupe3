@@ -1,0 +1,60 @@
+ @import url('main.css');
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+body{
+    background: #C9C9C9;
+}
+ .cv-container{
+     display: flex;
+     flex-direction: column;
+     width: 60vw;
+     margin: auto;
+     background: white;
+
+     
+    }
+.info{
+    border: 1px solid black;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 26vh;
+
+}
+.titre{
+    color: white;
+    margin-right: 10rem;
+    text-transform: uppercase;
+}
+.info h1{
+    color: white;
+    margin-right: 10rem;
+    text-transform: uppercase;
+}
+
+.cv-container .info img{
+    width: 100px;
+}
+.conteneur{
+    border: 1px solid black;
+    display: flex;
+    
+}
+.gauche{
+    /* text-align: right; */
+    width: 40%;
+    background-color: var(--new-color);
+}
+.droite{
+    margin: 40px 50px;
+    width: 60%;
+}
+.droite 
+
+

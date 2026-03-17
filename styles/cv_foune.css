@@ -1,6 +1,6 @@
 .conteneur {
     display: flex;
-    background-color: aliceblue;
+    background-color: rgb(202, 108, 64);
 
 }
 
@@ -14,7 +14,9 @@
 }
 
 .droite {
-    margin-left: 20px
+    margin-left: 20px;
+    
+
 }
 
 .info {
@@ -51,7 +53,6 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     padding: 0;
 
 
-
 }
 
 .cv-container {
@@ -59,7 +60,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     min-height: 297mm;
     margin: 10mm auto;
     padding: 20mm;
-    background: white;
+    background: rgb(201, 38, 38);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -68,10 +69,12 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     border-top: 1px solid rgb(224, 225, 226);
 }
 
-.droite Trait{
-    position: relative;
-    width: 2px;
-    height: 350px;
-    
-}
 
+    
+
+@media(max-width:768px){
+    .cv-container{
+         width: 70%;
+        
+    }
+}
