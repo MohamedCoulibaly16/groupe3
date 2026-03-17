@@ -258,10 +258,14 @@ img{
 
 
 /* responsive design pour le telephone */
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
     .cv {
         width: 100%;
         min-height: auto;
+    }
+
+    .nom{
+    margin-left: 35px;
     }
     
     .header {
@@ -269,12 +273,13 @@ img{
         height: auto;
         text-align: center;
         padding-bottom: 10px;
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
     
     .contenus {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     
     .profil {
@@ -286,7 +291,7 @@ img{
         width: 100%;
         margin-left: 0;
         margin-top: 20px;
-        padding-left: 20px;
+        
     }
 }
 
@@ -296,16 +301,28 @@ img{
         width: 100%;
         min-height: auto;
     }
+
+    .nom{
+    margin-left: 35px;
+    }
+    
+    .retourMain{
+        margin-right: 20px;
+    }
+
     
     .header {
         width: 100%;
         height: auto;
         text-align: center;
+        padding-bottom: 10px;
+        /* padding-left: 20px; */
     }
     
     .contenus {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     
     .profil {
@@ -317,8 +334,9 @@ img{
         width: 100%;
         margin-left: 0;
         margin-top: 20px;
+        padding-left: 20px;
     }
-}
+} 
 
 /* responsive design pour le telechargement du CV */
 /* @media print {
