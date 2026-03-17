@@ -36,7 +36,7 @@ body {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     padding: 1.42rem;
-    padding-left: 10.2rem;
+    padding-left: 11.5rem;
 
     img {
       position: absolute;
@@ -97,7 +97,7 @@ body {
     color: #fff;
     flex: none;
     width: 40%;
-    background-color: var(--secondary-color);
+    background-color: var(--new-color);
     padding: 250px 20px 50px;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
