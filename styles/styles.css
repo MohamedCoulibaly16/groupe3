@@ -47,8 +47,7 @@ header {
       font-weight: bold;
     }
 
-    a:active {
-    }
+    a:active {}
   }
 }
 
@@ -128,7 +127,7 @@ main {
   height: 275px;
   padding: 12px 10px;
   border-radius: 20px;
-  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -148,7 +147,7 @@ main {
   transition-duration: 200ms;
   transform: translateY(-10px);
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.288);
-  
+
 }
 
 .photo {
@@ -220,35 +219,48 @@ footer {
   }
 }
 
-.morbin-img {
-}
+
 
 .morbin-container {
-  height: 100px;
+  position: relative;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  margin-left: 10px;
+  border-radius: 50px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+
+  img {
+    top: -30px;
+    left: -10px;
+    height: 330px;
+    position: absolute;
+  }
 }
 
 .anim,
 .anim-card {
   opacity: 0;
   transform: translateY(30px);
-  
+
 }
 
 
 [class*="anim-"] {
   transition: 1.5s cubic-bezier(0.51, 0, 0, 0.97);
 }
+
 .anim-2 {
 
   transition-delay: 0.1s;
 }
+
 .anim-3 {
   transition-delay: 0.3s;
 }
 
 
-.morbin-img {
-}
+.morbin-img {}
 
 .morbin-container {
   height: 100px;
@@ -275,7 +287,7 @@ footer {
   }
 }
 
-#hero-text{
+#hero-text {
   display: inline-block;
   transition: all 0.6s ease;
   transform: translateX(0);
