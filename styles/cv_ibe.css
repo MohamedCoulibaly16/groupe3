@@ -50,18 +50,21 @@ li{
 }
 .profile-image {
     position: absolute;
-    padding: 4%;
-    top: 130px;
+    top: 28%;
+    left: 29%;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
     object-fit: cover;
-    
+    border: 3px solid #19B9D4;
+    border-radius: 50%; /* image ronde */
+    padding: 0px;
 }
 .info-detail {
     padding: 15px;
     background: white;
 }
+
+
 
 .experience {
     .experience-item {
@@ -139,7 +142,7 @@ li{
 .divider-education::before {
     content: "";
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: -5px;
     width: 10px;
     height: 10px;
@@ -188,11 +191,16 @@ i{
     i{
         padding: 0;
     }
-
-    .education {
-    width: 90%;
+.divider{
+    margin-top: 0px;
+}
+.education {
+    width: 80%;
     
    
+}
+.detail {
+    gap: 0;
 }
 
     .personal-info {
@@ -208,11 +216,14 @@ i{
             margin: 0;
         }
     }
-    .profile-image {
+     .profile-image {
         position: static;
         width: 100px;
         height: 100px;
         margin-left: 0;
+        border: 3px solid #19B9D4;
+        border-radius: 50%; /* image ronde */
+        padding: 0px;
     }
     
     .cv-container {
@@ -251,7 +262,7 @@ i{
     width: 1px;
     height: 190px;
     background-color: var(--bleu-saphir-fonce);
-    margin: 40px auto;
+    
 }
 .divider-profile::before {
     content: "";
@@ -269,7 +280,6 @@ i{
     width: 1px;
     height: 390px;
     background-color: var(--bleu-saphir-fonce);
-    margin: 40px auto;
 }
 .divider-experience::before {
     content: "";

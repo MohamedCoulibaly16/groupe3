@@ -40,6 +40,8 @@ body {
 
 
 .sidebar-section {
+
+
     h3 {
         font-size: 16px;
     }
@@ -49,6 +51,13 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        margin-right: 20px;
+
+        margin: 0;
+
+        span {
+            padding-left: 10px;
+        }
     }
 
     span {
@@ -57,7 +66,7 @@ body {
 
     ul {
         padding: 0;
-        margin: 0 10px;
+        margin: 0;
     }
 
     .langue-item {
@@ -70,12 +79,17 @@ body {
         background-color: var(--primary-color);
         width: 20px;
         height: 20px;
-        margin: 2px 10px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-right: 0px;
+        margin-left: 0px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 2px;
         border-radius: 50%;
+
+
     }
 }
 
@@ -88,11 +102,11 @@ body {
 
 .profile-section {
     width: 537px;
-
-    top: 50px;
+    top: 30px;
     color: white;
     position: absolute;
     right: 0;
+
 
 
     display: flex;
@@ -152,17 +166,34 @@ body {
 
 
 
-    figure {
+    .figure {
         position: absolute;
-        left: -150px;
+        left: -130px;
+        top: 7px;
+        height: 180px;
+        width: 180px;
+        background-color: white;
+
+        section {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -125px;
+                left: -155px;
+                height: 300px;
+            }
+        }
     }
 
-    section {
+    .side-text {
         background-color: var(--new-color);
-        padding-left: 70px;
-        padding-right: 50px;
+        padding-left: 140px;
+        padding-right: 30px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 }
 
