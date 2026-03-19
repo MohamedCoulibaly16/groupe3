@@ -63,7 +63,6 @@ body {
 
 .container_telechargement {
   display: flex;
-
   justify-content: space-around;
   padding: 20px;
   align-items: center;
