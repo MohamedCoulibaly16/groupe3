@@ -84,7 +84,10 @@
         margin: 8px 0;
     }
     .contact i {
-        margin-right: 8px;
+        margin-right: 2px;
+    }
+    .contact li{
+        margin: 2px;
     }
     
     .contact-section ul{
@@ -174,7 +177,20 @@
         height: 15%;
         position: absolute;
         margin: 5rem 2rem 0;
-        top: 19rem;
+        top: 20rem;
+    }
+
+    .ligne-verticale::before{
+        content: "";
+        position: absolute;
+        top: 40px;
+        left: -5px;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 20px;
+        border: 2px solid black;
+        border-radius: 50%;
     }
 
     #profile-icon{
@@ -192,18 +208,92 @@
         margin: 18rem 2rem 0;
         top: 19rem;
     }
-
-    .ligne-verticale::before{
+        /* .ligne-formation::before{
         content: "";
         position: absolute;
-        top: 50px;
+        top: 30px;
         left: -5px;
-        width: 110px;
-        height: 110px;
-        background-color: var(--gris-clair);
+        width: 10px;
+        height: 10px;
+        background-color: white;
         border-radius: 20px;
-        border: 2px solid var(--bleu-saphir-fonce);
+        border: 2px solid black;
+        border-radius: 50%;
+    } */
+        /* .ligne-formation::before{
+        content: "";
+        position: absolute;
+        top: 70px;
+        left: -5px;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 20px;
+        border: 2px solid black;
+        border-radius: 50%;
+    } */
+     #titre1::before{
+        content: "";
+        position: absolute;
+        top: 74px;
+        left: 27px;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 20px;
+        border: 2px solid black;
+        border-radius: 50%;
     }
+     #titre2::before{
+        content: "";
+        position: absolute;
+        top: 168px;
+        left: 27px;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 20px;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+     #titre3::before{
+        content: "";
+        position: absolute;
+        top: 260px;
+        left: 27px;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 20px;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+     #titre4::before{
+        content: "";
+        position: absolute;
+        top: 332px;
+        left: 27px;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 20px;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+    #titre5::before{
+        content: "";
+        position: absolute;
+        top: 68px;
+        left: 27px;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 20px;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+
+
 
     #formation-icon{
         position: absolute;
