@@ -1,60 +1,76 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Aïssata TRAORE</title>
-    <link rel="stylesheet" href="../styles/cv_Aissata.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="container_telechargement no-print">
-      <div class="retourMain">
-        <h3>
-          <i class="fa-solid fa-arrow-left"></i>
-          <a href="../index.html">Retour</a>
-        </h3>
-      </div>
-      <div>
-        <!-- <button type="button" class="telecharger" onclick="window.print()"><i class="fa-solid fa-download"></i> Télécharger le CV</button> -->
-        <button
-          type="button"
-          class="telecharger"
-          data-docpath="../cv/PDF/CV-Aïssata-TRAORE.pdf"
-          onclick="downloadPDF(this, `CV Aissata TRAORE`)"
-        >
-          <i class="fa-solid fa-download"></i> Télécharger le CV
-        </button>
-      </div>
-    </div>
-    <div id="content" class="cv-container">
-      <!-- DEBUT Partie gauche -->
-      <aside class="sidebar">
-        <section class="sidebar-content">
-          <div class="sidebar-section">
-            <h3>COORDONNEES</h3>
-            <ul>
-              <li>
-                <figure><i class="fa-solid fa-phone"></i></figure>
-                +223 72 21 48 02
-              </li>
-              <li>
-                <figure><i class="fas fa-envelope"></i></figure>
-                aissata28t@gmail.com
-              </li>
-              <li>
-                <figure><i class="fas fa-map-marker-alt"></i></figure>
-                Samé, Bamako
-              </li>
-            </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Aïssata TRAORE</title>
+  <link rel="stylesheet" href="../styles/cv_Aissata.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+  
+  
+  <div class="container_telechargement no-print" >
+            <div class="retourMain">
+                 <a href="../index.html"><i class="fa-solid fa-arrow-left"></i>Retour</a>
+            </div>
+            <div>
+                <!-- <button type="button" class="telecharger" onclick="window.print()"><i class="fa-solid fa-download"></i> Télécharger le CV</button> -->
+                <button type="button" class="telecharger" data-docpath="../cv/PDF/CV-Aïssata-TRAORE.pdf" onclick="downloadPDF(this,`CV Aissata TRAORE`)"><i class="fa-solid fa-download"></i> Télécharger le CV</button>
+                
+            </div>
+        </div>
+  <div id="content" class="cv-container">
+
+    <!-- DEBUT Partie gauche -->
+    <aside class="sidebar">
+
+      <section class="sidebar-content">
+        <div class="sidebar-section">
+          <h3>COORDONNEES</h3>
+          <ul>
+            <li>
+              <figure><i class="fa-solid fa-phone"></i></figure> +223 72 21 48 02
+            </li>
+            <li>
+              <figure><i class="fas fa-envelope"></i></figure> aissata28t@gmail.com
+            </li>
+            <li>
+              <figure><i class="fas fa-map-marker-alt"></i></figure> Samé, Bamako
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <h3>COMPETENCES</h3>
+          <ul class="ma-liste">
+            <li>Création de sites web</li>
+            <li>Conception d'applications mobiles</li>
+            <li>Mobilisation et gestion de foules</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <h3>CONNAISSANCES</h3>
+          <ul class="ma-liste">
+            <li>Word, Excel, PowerPoint, Access</li>
+            <li>Gestion de bases de données</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <h3>LANGUES</h3>
+          <div class="langue-item">
+            <span>ANGLAIS</span> <span>Passable</span>
+          </div>
+          <div class="langue-item">
+            <span>FRANCAIS</span> <span>Courant</span>
+          </div>
+          <div class="langue-item">
+            <span>BAMBARA</span> <span>Courant</span>
           </div>
 
           <div class="sidebar-section">
