@@ -1,0 +1,136 @@
+ @import url('main.css');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
+
+ body {
+     background: #C9C9C9;
+ }
+
+ .cv-container {
+     display: flex;
+     flex-direction: column;
+     margin: auto;
+     background: white;
+     width: 797px;
+     height: 870px;
+
+ }
+
+ .info {
+     background: var(--primary-color);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 15vh;
+
+ }
+
+ .titre {
+     color: white;
+     margin-right: 10rem;
+     text-transform: uppercase;
+     text-align: left;
+     padding-left: 16em;
+ }
+
+ .info h1 {
+     color: white;
+     margin-right: 10rem;
+     text-transform: uppercase;
+     text-align: right;
+     font-size: 25px;
+     padding-left: 12em;
+
+ }
+
+ .photo {
+     position: relative;
+     left: 25px;
+     bottom: 35px;
+
+
+ }
+
+
+ .cv-container .info img {
+     width: 140px;
+     height: 140px;
+     border-radius: 50%;
+     display: block;
+     background-color: white;
+     border: white 5px solid;
+     object-fit: cover;
+     margin: 0 auto 4vh;
+     position: absolute;
+
+
+
+
+ }
+
+ .conteneur {
+     display: flex;
+
+ }
+
+ .gauche {
+     /* text-align: right; */
+
+     background-color: var(--new-color);
+     width: 32%;
+     height: 110%;
+     color: aliceblue;
+     padding-left: 30px;
+
+
+ }
+
+ .contacter 1 {
+     margin-top: 4px margin-
+     margin-left: 20px;
+ }
+
+
+
+ .droite {
+     margin: 40px 50px;
+     width: 80%;
+     padding-bottom: 50px;
+     margin-top: -5px;
+
+ }
+
+ .c h1 {
+     padding-top: 20px;
+ }
+
+ .droite h1 {
+     font-size: 20px;
+ }
+
+ .gauche h1 {
+     font-size: 20px;
+     display: flex;
+     padding-right: 200px;
+     text-align: center;
+
+ }
+
+ .gauche section {
+     margin-top: 50px;
+
+ }
+
+ .droite section {
+     margin-top: 30px;
+
+ }
+
+ .gauche .dots {
+     width: 50%;
+ }
