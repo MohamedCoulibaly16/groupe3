@@ -1,8 +1,10 @@
  :root {
-            --navy-blue: #323b4c;
-            --sidebar-bg: #e8eaec;
-            --text-dark: #333333;
+            --navy-blue: #183684;
+            --texts-color: #ffffff;
+            --sidebar-bg: #6277AC;
+            --text-dark: #FFFFFF;
             --text-grey: #555555;
+            --text-black: #000000;
             --border-grey: #c0c5cb;
         }
 
@@ -13,7 +15,7 @@
         }
 
         body {
-            background-color: #525659;
+            background-color: #ffffff;
             font-family: 'Montserrat', sans-serif;
             padding: 40px;
         }
@@ -103,9 +105,9 @@
         .sidebar-section h3 {
             font-size: 16px;
             font-weight: 800;
-            color: var(--navy-blue);
+            color: var(--texts-color);
             letter-spacing: 2px;
-            border-bottom: 2px solid var(--navy-blue);
+            border-bottom: 2px solid var(--texts-color);
             padding-bottom: 8px;
             margin-bottom: 15px;
         }
@@ -126,7 +128,7 @@
         .contact-list .icon {
             font-size: 14px;
             width: 25px;
-            color: var(--navy-blue);
+            color: var(--texts-color);
         }
 
         .skills-list li {
@@ -140,7 +142,7 @@
 
         .skills-list li::before {
             content: "•";
-            color: var(--navy-blue);
+            color: var(--texts-color);
             font-size: 20px;
             margin-right: 10px;
             line-height: 10px;
@@ -149,7 +151,7 @@
         /* --- COLONNE DROITE --- */
         .main-content {
             width: 65%;
-            padding: 40px 45px;
+            padding: 60px 45px;
         }
 
         .timeline {
@@ -175,7 +177,7 @@
             top: -5px;
             width: 35px;
             height: 35px;
-            background-color: var(--navy-blue);
+            background-color: var(--text-grey);
             color: white;
             border-radius: 50%;
             display: flex;
@@ -188,8 +190,9 @@
         .section-header h3 {
             font-size: 18px;
             font-weight: 800;
-            color: var(--navy-blue);
+            color: var(--text-grey);
             letter-spacing: 2px;
+            border-bottom: 2px solid var(--text-grey);
         }
 
         .profile-text {
@@ -211,7 +214,7 @@
             width: 10px;
             height: 10px;
             background-color: white;
-            border: 2px solid var(--navy-blue);
+            border: 2px solid var(--text-grey);
             border-radius: 50%;
         }
 
@@ -225,7 +228,7 @@
         .item-title h4 {
             font-size: 14px;
             font-weight: 700;
-            color: var(--navy-blue);
+            color: var(--text-grey);
         }
 
         .item-title h5 {
