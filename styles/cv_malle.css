@@ -74,8 +74,6 @@
      top: 15px;
 
 
-
-
  }
 
  .conteneur {
@@ -128,46 +126,46 @@
 
  }
  .contacter_1{
-
-     border: solid black 2px;
      margin-left: -10px;
  }
  .contacter_1 p{
+
  }
 
- .divider-experience{
+ .divider-PROFILE{
     background-color: #000;
     width: 2px;
-    height: 22%;
+    height: 14%;
     position: absolute;
     margin: 5rem -25px;
-    top: 20rem;
+    top: 19rem;
 
  }
-  .divider-experience::before{
+  .divider-PROFILE::before{
    content: "";
    position: absolute;
-   top: 40px;
-   left: -5px;
-   width: 7px;
-   height: 7px;
+   top: 55px;
+   left: -3px;
+   width: 6px;
+   height: 5px;
    background-color: white;
    border-radius: 50%;
    border: solid black 2px;
 
  }
 
-
  #profile-icone{
     /* border: #000 solid 1px; */
     margin-left: 0;
     position: absolute;
-    left: -40px;
+    left: -43px;
+    top: 2px;
+    
  }
  .section-profile{
     position: relative;
  }
- 
+
 
  .gauche section {
      margin-top: 80px;
@@ -182,3 +180,39 @@
  .gauche .dots {
      width: 50%;
  }
+
+#profile-icone_Education{
+ margin-left: -40px;
+ 
+}
+
+.line{
+    width: 20%;
+    height: 3px;
+    background-color: black;
+    content: "";
+    
+}
+
+.line::before{
+   height: 85px;
+   position: absolute;
+   margin-left: -24px;
+   border: solid black 2px;
+
+
+
+
+
+
+}
+
+   
+
+
+
+
+
+ 
+
+
