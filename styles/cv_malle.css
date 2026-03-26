@@ -18,6 +18,7 @@
      background: white;
      width: 797px;
      height: 870px;
+     /* border: 2px solid; */
 
  }
 
@@ -26,7 +27,10 @@
      display: flex;
      align-items: center;
      justify-content: space-between;
-     height: 15vh;
+     height: 250px;
+     width: 100%;
+     position: relative;
+     /* border: black solid; */
 
  }
 
@@ -49,8 +53,9 @@
  }
 
  .photo {
-     position: relative;
-     left: 25px;
+     left: 28px;
+     top: 75px;
+     position: absolute;
      bottom: 35px;
 
 
@@ -58,15 +63,15 @@
 
 
  .cv-container .info img {
-     width: 140px;
-     height: 140px;
+     width: 200px;
+     height: 200px;
      border-radius: 50%;
      display: block;
      background-color: white;
      border: white 5px solid;
      object-fit: cover;
      margin: 0 auto 4vh;
-     position: absolute;
+     top: 15px;
 
 
 
@@ -84,14 +89,15 @@
      background-color: var(--new-color);
      width: 32%;
      height: 126%;
+     height: 672px;
      color: aliceblue;
      padding-left: 30px;
 
 
  }
 
- .contacter 1 {
-     margin-top: 4px margin-
+ .contacter_1 {
+     margin-top: 4px;
      margin-left: 20px;
  }
 
@@ -102,6 +108,7 @@
      width: 80%;
      padding-bottom: 50px;
      margin-top: -5px;
+    
 
  }
 
@@ -120,9 +127,50 @@
      text-align: center;
 
  }
+ .contacter_1{
+
+     border: solid black 2px;
+     margin-left: -10px;
+ }
+ .contacter_1 p{
+ }
+
+ .divider-experience{
+    background-color: #000;
+    width: 2px;
+    height: 22%;
+    position: absolute;
+    margin: 5rem -25px;
+    top: 20rem;
+
+ }
+  .divider-experience::before{
+   content: "";
+   position: absolute;
+   top: 40px;
+   left: -5px;
+   width: 7px;
+   height: 7px;
+   background-color: white;
+   border-radius: 50%;
+   border: solid black 2px;
+
+ }
+
+
+ #profile-icone{
+    /* border: #000 solid 1px; */
+    margin-left: 0;
+    position: absolute;
+    left: -40px;
+ }
+ .section-profile{
+    position: relative;
+ }
+ 
 
  .gauche section {
-     margin-top: 50px;
+     margin-top: 80px;
 
  }
 
