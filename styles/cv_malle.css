@@ -83,8 +83,7 @@
 
      background-color: var(--new-color);
      width: 32%;
-     height: 126%;
-     height: 672px;
+     height: 693px;
      color: aliceblue;
      padding-left: 30px;
 
@@ -134,8 +133,7 @@
     height: 22%;
     position: absolute;
     margin: 5rem -25px;
-    top: 19rem;
-
+    top: 18rem;
  }
 
   .divider-PROFILE::before{
@@ -154,7 +152,7 @@
  .Divider-Formations{
     background-color: #000;
     width: 2px;
-    height: 22%;
+    height: 2%;
     position: absolute;
     margin: 5rem -20px;
     top: 46%;
@@ -184,11 +182,33 @@
    border: solid black 2px;
 }
 
-#conteneur-titre{
+.conteneur-titre{
     position: relative;
 }
 
 #point-bac::before{
+content: "";
+    position: absolute;
+   top: 4px;
+   left: -23px;
+   width: 5px;
+   height: 5px;
+   background-color: rgb(240, 236, 236);
+   border-radius: 50%;
+   border: solid black 2px;
+}
+#point-def::before{
+content: "";
+    position: absolute;
+   top: 21px;
+   left: -23px;
+   width: 5px;
+   height: 5px;
+   background-color: rgb(240, 236, 236);
+   border-radius: 50%;
+   border: solid black 2px;
+}
+#point-attestation::before{
 content: "";
     position: absolute;
    top: 4px;
@@ -236,19 +256,7 @@ content: "";
    border: solid black 2px;
 }
 
-.rond-def::before{
- content: "";
-    position:absolute;
-   top: 10px;
-   left: -6px;
-   width: 3px;
-   height: 3px;
-   background-color: white;
-   border-radius: 50%;
-   border: solid black 2px;
 
-
-}
 
 
 
